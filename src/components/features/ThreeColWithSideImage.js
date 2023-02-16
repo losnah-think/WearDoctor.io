@@ -17,6 +17,21 @@ import FastIconImage from "images/fast-icon.svg";
 import ReliableIconImage from "images/reliable-icon.svg";
 import SimpleIconImage from "images/simple-icon.svg";
 
+import {
+  previousStep01,
+  previousStep02,
+  previousStep03,
+  previousStep04,
+  previousStep05,
+  previousStep06,
+  watchStep01,
+  watchStep02,
+  watchStep03,
+  watchStep04,
+  previousText,
+  watchText
+} from 'images/steps/index';
+
 const Container = tw.div`relative`;
 
 const ThreeColumnContainer = styled.div`
@@ -29,7 +44,7 @@ const Description = tw(SectionDescription)`w-full text-center`;
 const VerticalSpacer = tw.div`mt-10 w-full`
 
 const Column = styled.div`
-  ${tw`md:w-1/2 lg:w-1/3 max-w-sm`}
+  ${tw`md:w-1/2 lg:w-1/2 max-w-sm`}
 `;
 
 const Card = styled.div`
@@ -67,6 +82,14 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
    *  If a key for a particular card is not provided, a default value is used
    */
 
+  const defaultText = [
+    { imageSrc: previousStep01, title: "previousStep01", description: "" },
+    { imageSrc: previousStep02, title: "previousStep02", description: "" },
+    { imageSrc: previousStep03, title: "previousStep03", description: "" },
+    { imageSrc: previousStep04, title: "previousStep04", description: "" },
+    { imageSrc: previousStep05, title: "previousStep05", description: "" },
+    { imageSrc: previousStep06, title: "previousStep06", description: "" },
+  ]
   const defaultCards = [
     {
       imageSrc: ShieldIconImage,
@@ -89,12 +112,12 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
         <Heading>{heading}</Heading>
         {description && <Description>{description}</Description>}
         <VerticalSpacer />
-        {cards.map((card, i) => (
+        {defaultText.map((card, i) => (
           <Column key={i}>
             <Card>
-              <span className="imageContainer">
-                <img src={card.imageSrc || defaultCardImage} alt="" />
-              </span>
+              <img src={card.imageSrc || defaultCardImage} alt="" />
+              {/* <span className="imageContainer"> 
+              </span> */}
               <span className="textContainer">
                 <span className="title">{card.title || "Fully Secure"}</span>
                 <p className="description">

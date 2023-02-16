@@ -1,5 +1,5 @@
 import React from "react";
-import GlobalStyles from 'styles/GlobalStyles';
+import GlobalStyles from "styles/GlobalStyles";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
 import SaaSProductLandingPage from "demos/SaaSProductLandingPage.js";
@@ -15,7 +15,7 @@ export default function App() {
       <GlobalStyles />
       <Router>
         <Routes>
-        <Route path="/contact" element={<ContractUs />} />
+          <Route path="/contact" element={<ContractUs />} />
           <Route path="/privacy" element={<PrivacyPolicyPage />} />
           <Route path="/terms" element={<TermsOfServicePage />} />
           <Route path="/" element={<SaaSProductLandingPage />} />

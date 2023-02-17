@@ -11,12 +11,20 @@ import Pricing from "components/pricing/ThreePlans.js";
 import Testimonial from "components/testimonials/TwoColumnWithImageAndRating.js";
 import FAQ from "components/faqs/SingleCol.js";
 import GetStarted from "components/cta/GetStarted";
-import Footer from "components/footers/FiveColumnWithInputForm";
+import Footer from "components/footers/FiveColumnWithBackground.js";
+import {
+  watchStep01,
+  watchStep02,
+  watchStep03,
+  watchStep04,
+} from 'images/steps/index';
 import heroScreenshotImageSrc from "images/hero-screenshot-1.png";
 import macHeroScreenshotImageSrc from "images/hero-screenshot-2.png";
 import prototypeIllustrationImageSrc from "images/prototype-illustration.svg";
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
+
+const heading = "watch-text-1"
 
 export default () => {
   const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
@@ -25,12 +33,16 @@ export default () => {
   return (
     <AnimationRevealPage>
       <Hero roundedHeaderButton={true} />
+      <Features />
       <Features
-        subheading={<Subheading>Features</Subheading>}
-        heading={
-          <>
-            We have Amazing <HighlightedText>Service.</HighlightedText>
-          </>
+        heading={heading}
+        steps={
+          [
+            { imageSrc: watchStep01, title: "watchStep01", description: "Launch Wear app" },
+            { imageSrc: watchStep02, title: "watchStep02", description: "Select watch settings" },
+            { imageSrc: watchStep03, title: "watchStep03", description: "Select Samsung Health" },
+            { imageSrc: watchStep04, title: "watchStep04", description: "Select the always measure heart rate" },
+          ]
         }
       />
       <MainFeature

@@ -47,7 +47,7 @@ const Card = styled.div`
 `;
 
 const PrimaryButton = styled(PrimaryButtonBase)`
-  ${tw`absolute top-3/4 w-72 h-16 bg-white border border-gray-800 text-lg text-gray-800 inset-y-1/2 -translate-x-1/2 -translate-y-1/2`}
+  ${tw`absolute top-9/12 w-9/12 lg:h-16 h-12 p-0 bg-white border border-gray-800 lg:text-lg md:text-sm text-xs text-gray-800 inset-y-1/2 -translate-x-1/2 -translate-y-1/2`}
 `;
 
 const DecoratorBlob = styled(SvgDecoratorBlob3)`

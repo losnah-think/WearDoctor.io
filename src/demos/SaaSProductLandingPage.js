@@ -12,6 +12,14 @@ import Testimonial from "components/testimonials/TwoColumnWithImageAndRating.js"
 import FAQ from "components/faqs/SingleCol.js";
 import GetStarted from "components/cta/GetStarted";
 import Footer from "components/footers/FiveColumnWithBackground.js";
+import {
+  watchStep01,
+  watchStep02,
+  watchStep03,
+  watchStep04,
+  previousText,
+  watchText
+} from 'images/steps/index';
 import heroScreenshotImageSrc from "images/hero-screenshot-1.png";
 import macHeroScreenshotImageSrc from "images/hero-screenshot-2.png";
 import prototypeIllustrationImageSrc from "images/prototype-illustration.svg";
@@ -31,6 +39,22 @@ export default () => {
           <>
             We have Amazing <HighlightedText>Service.</HighlightedText>
           </>
+        }
+      />
+      <Features
+        subheading={<Subheading>Features</Subheading>}
+        heading={
+          <>
+            We have Amazing <HighlightedText>Service.</HighlightedText>
+          </>
+        }
+        steps={
+          [
+            { imageSrc: watchStep01, title: "watchStep01", description: "Launch Wear app" },
+            { imageSrc: watchStep02, title: "watchStep02", description: "Select watch settings" },
+            { imageSrc: watchStep03, title: "watchStep03", description: "Select Samsung Health" },
+            { imageSrc: watchStep04, title: "watchStep04", description: "Select the always measure heart rate" },
+          ]
         }
       />
       <MainFeature

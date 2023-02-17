@@ -24,12 +24,7 @@ import {
   previousStep04,
   previousStep05,
   previousStep06,
-  watchStep01,
-  watchStep02,
-  watchStep03,
-  watchStep04,
   previousText,
-  watchText
 } from 'images/steps/index';
 
 const Container = tw.div`relative`;
@@ -61,7 +56,7 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
   ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
 `;
 
-export default ({steps = null, heading = "Amazing Features", subheading = "Features", description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }) => {
+export default ({steps = null, heading = null, subheading = null, description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}) => {
   const defaultSteps = [
     { imageSrc: previousStep01, title: "previousStep01", description: "Wear Doctor app installation" },
     { imageSrc: previousStep02, title: "previousStep02", description: "Health Connect app installation" },
@@ -84,7 +79,7 @@ export default ({steps = null, heading = "Amazing Features", subheading = "Featu
           <Column key={i}>
             <Card>
               <span className="imageContainer"> 
-                <img src={card.imageSrc || defaultCardImage} alt="" />
+                <img src={card.imageSrc || defaultCardImage} alt={card.description} />
               </span>
             </Card>
           </Column>

@@ -34,7 +34,6 @@ const ThreeColumnContainer = styled.div`
 `;
 const Subheading = tw(SubheadingBase)`mb-4`;
 const Heading = tw(SectionHeading)`w-full`;
-const Description = tw(SectionDescription)`w-full text-center`;
 
 const VerticalSpacer = tw.div`mt-10 w-full`
 
@@ -56,7 +55,7 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
   ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
 `;
 
-export default ({steps = null, heading = null, subheading = null, description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}) => {
+export default ({steps = null, heading = null, subheading = null}) => {
   const defaultSteps = [
     { imageSrc: previousStep01, title: "previousStep01", description: "Wear Doctor app installation" },
     { imageSrc: previousStep02, title: "previousStep02", description: "Health Connect app installation" },
@@ -73,7 +72,6 @@ export default ({steps = null, heading = null, subheading = null, description = 
       <ThreeColumnContainer>
         {subheading && <Subheading>{subheading}</Subheading>}
         <Heading>{heading}</Heading>
-        {description && <Description>{description}</Description>}
         <VerticalSpacer />
         {steps.map((card, i) => (
           <Column key={i}>

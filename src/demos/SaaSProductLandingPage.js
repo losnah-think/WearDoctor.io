@@ -17,14 +17,14 @@ import {
   watchStep02,
   watchStep03,
   watchStep04,
-  previousText,
-  watchText
 } from 'images/steps/index';
 import heroScreenshotImageSrc from "images/hero-screenshot-1.png";
 import macHeroScreenshotImageSrc from "images/hero-screenshot-2.png";
 import prototypeIllustrationImageSrc from "images/prototype-illustration.svg";
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
+
+const heading = "watch-text-1"
 
 export default () => {
   const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
@@ -33,21 +33,9 @@ export default () => {
   return (
     <AnimationRevealPage>
       <Hero roundedHeaderButton={true} />
+      <Features />
       <Features
-        subheading={<Subheading>Features</Subheading>}
-        heading={
-          <>
-            We have Amazing <HighlightedText>Service.</HighlightedText>
-          </>
-        }
-      />
-      <Features
-        subheading={<Subheading>Features</Subheading>}
-        heading={
-          <>
-            We have Amazing <HighlightedText>Service.</HighlightedText>
-          </>
-        }
+        heading={heading}
         steps={
           [
             { imageSrc: watchStep01, title: "watchStep01", description: "Launch Wear app" },

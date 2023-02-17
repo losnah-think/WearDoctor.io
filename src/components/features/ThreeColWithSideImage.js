@@ -3,19 +3,10 @@ import styled from "styled-components";
 import tw from "twin.macro";
 //eslint-disable-next-line
 import { css } from "styled-components/macro";
-import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
-import { SectionDescription } from "components/misc/Typography.js";
+import { SectionHeading } from "components/misc/Headings.js";
 
 import defaultCardImage from "images/shield-icon.svg";
-
 import { ReactComponent as SvgDecoratorBlob3 } from "images/svg-decorator-blob-3.svg";
-
-import SupportIconImage from "images/support-icon.svg";
-import ShieldIconImage from "images/shield-icon.svg";
-import CustomizeIconImage from "images/customize-icon.svg";
-import FastIconImage from "images/fast-icon.svg";
-import ReliableIconImage from "images/reliable-icon.svg";
-import SimpleIconImage from "images/simple-icon.svg";
 
 import {
   previousStep01,
@@ -24,16 +15,19 @@ import {
   previousStep04,
   previousStep05,
   previousStep06,
-  previousText,
 } from 'images/steps/index';
 
 const Container = tw.div`relative`;
 
 const ThreeColumnContainer = styled.div`
-  ${tw`flex flex-col items-center md:items-stretch sm:flex-row flex-wrap md:justify-center max-w-screen-lg mx-auto py-20 md:py-24`}
+  ${tw`flex flex-col items-center md:items-stretch sm:flex-row flex-wrap justify-center max-w-screen-lg mx-auto py-20 md:py-24`}
 `;
-const Subheading = tw(SubheadingBase)`mb-4`;
-const Heading = tw(SectionHeading)`w-full`;
+const Heading = styled.div`
+  ${tw`flex flex-col items-center justify-center mx-32`}
+    img {
+      ${tw`md:w-4/6`}
+    }
+  }`;
 
 const VerticalSpacer = tw.div`mt-10 w-full`
 
@@ -42,7 +36,7 @@ const Column = styled.div`
 `;
 
 const Card = styled.div`
-  ${tw`flex flex-col sm:flex-row md:justify-center items-center sm:items-start text-center sm:text-left h-full mx-4 px-2 py-8`}
+  ${tw`flex flex-col sm:flex-row justify-center items-center sm:items-start text-center sm:text-left h-full mx-4 px-2 py-8`}
   .imageContainer {
     ${tw`text-center p-5`}
     img {
@@ -50,12 +44,11 @@ const Card = styled.div`
     }
   }
 `;
-
 const DecoratorBlob = styled(SvgDecoratorBlob3)`
   ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
 `;
 
-export default ({steps = null, heading = null, subheading = null}) => {
+export default ({steps = null, heading = null}) => {
   const defaultSteps = [
     { imageSrc: previousStep01, title: "previousStep01", description: "Wear Doctor app installation" },
     { imageSrc: previousStep02, title: "previousStep02", description: "Health Connect app installation" },
@@ -66,12 +59,12 @@ export default ({steps = null, heading = null, subheading = null}) => {
   ]
 
   if (!steps) steps = defaultSteps;
+  if (!heading) heading = "previous-text-1";
 
   return (
     <Container>
       <ThreeColumnContainer>
-        {subheading && <Subheading>{subheading}</Subheading>}
-        <Heading>{heading}</Heading>
+        <Heading><img src={require(`../../images/steps/${heading}.png`)} /></Heading>
         <VerticalSpacer />
         {steps.map((card, i) => (
           <Column key={i}>

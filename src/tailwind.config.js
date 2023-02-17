@@ -336,6 +336,7 @@ module.exports = {
     inset: {
       '0': '0',
       '1/2': '50%',
+      '3/4': '75%',
       auto: 'auto',
     },
     letterSpacing: {
@@ -636,10 +637,12 @@ module.exports = {
       ...theme('spacing'),
       ...negative(theme('spacing')),
       '-full': '-100%',
+      '-3/4': '-75%',
       '-2/3': '-66.67%',
       '-1/2': '-50%',
       '1/2': '50%',
       '2/3': '66.67%',
+      '3/4': '75%',
       full: '100%',
     }),
     skew: {

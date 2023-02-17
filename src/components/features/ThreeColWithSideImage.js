@@ -63,12 +63,12 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
 
 export default ({steps = null, heading = "Amazing Features", subheading = "Features", description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }) => {
   const defaultSteps = [
-    { imageSrc: previousStep01, title: "previousStep01", description: "" },
-    { imageSrc: previousStep02, title: "previousStep02", description: "" },
-    { imageSrc: previousStep03, title: "previousStep03", description: "" },
-    { imageSrc: previousStep04, title: "previousStep04", description: "" },
-    { imageSrc: previousStep05, title: "previousStep05", description: "" },
-    { imageSrc: previousStep06, title: "previousStep06", description: "" },
+    { imageSrc: previousStep01, title: "previousStep01", description: "Wear Doctor app installation" },
+    { imageSrc: previousStep02, title: "previousStep02", description: "Health Connect app installation" },
+    { imageSrc: previousStep03, title: "previousStep03", description: "Launch Health Connect app" },
+    { imageSrc: previousStep04, title: "previousStep04", description: "Select app permissions" },
+    { imageSrc: previousStep05, title: "previousStep05", description: "Select Wear Doctor and Samsung Health" },
+    { imageSrc: previousStep06, title: "previousStep06", description: "Allow all app access" },
   ]
 
   if (!steps) steps = defaultSteps;

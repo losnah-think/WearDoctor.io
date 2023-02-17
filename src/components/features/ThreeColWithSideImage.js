@@ -4,6 +4,7 @@ import tw from "twin.macro";
 //eslint-disable-next-line
 import { css } from "styled-components/macro";
 import { SectionHeading } from "components/misc/Headings.js";
+import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 
 import defaultCardImage from "images/shield-icon.svg";
 import { ReactComponent as SvgDecoratorBlob3 } from "images/svg-decorator-blob-3.svg";
@@ -38,20 +39,25 @@ const Column = styled.div`
 const Card = styled.div`
   ${tw`flex flex-col sm:flex-row justify-center items-center sm:items-start text-center sm:text-left h-full mx-4 px-2 py-8`}
   .imageContainer {
-    ${tw`text-center p-5`}
+    ${tw`relative text-center p-5`}
     img {
       ${tw`w-full md:w-auto h-full md:h-auto`}
     }
   }
 `;
+
+const PrimaryButton = styled(PrimaryButtonBase)`
+  ${tw`absolute top-3/4 w-72 h-16 bg-white border border-gray-800 text-lg text-gray-800 inset-y-1/2 -translate-x-1/2 -translate-y-1/2`}
+`;
+
 const DecoratorBlob = styled(SvgDecoratorBlob3)`
   ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
 `;
 
 export default ({steps = null, heading = null}) => {
   const defaultSteps = [
-    { imageSrc: previousStep01, title: "previousStep01", description: "Wear Doctor app installation" },
-    { imageSrc: previousStep02, title: "previousStep02", description: "Health Connect app installation" },
+    { imageSrc: previousStep01, title: "previousStep01", description: "Wear Doctor app installation", button: "웨어닥터 다운로드" },
+    { imageSrc: previousStep02, title: "previousStep02", description: "Health Connect app installation", button: "Health Connet 다운로드" },
     { imageSrc: previousStep03, title: "previousStep03", description: "Launch Health Connect app" },
     { imageSrc: previousStep04, title: "previousStep04", description: "Select app permissions" },
     { imageSrc: previousStep05, title: "previousStep05", description: "Select Wear Doctor and Samsung Health" },
@@ -66,12 +72,13 @@ export default ({steps = null, heading = null}) => {
       <ThreeColumnContainer>
         <Heading><img src={require(`../../images/steps/${heading}.png`)} /></Heading>
         <VerticalSpacer />
-        {steps.map((card, i) => (
+        {steps.map((step, i) => (
           <Column key={i}>
             <Card>
-              <span className="imageContainer"> 
-                <img src={card.imageSrc || defaultCardImage} alt={card.description} />
-              </span>
+              <div className="imageContainer"> 
+                <img src={step.imageSrc || defaultCardImage} alt={step.description} />
+                {step.button && <PrimaryButton>{step.button}</PrimaryButton>}
+              </div>
             </Card>
           </Column>
         ))}

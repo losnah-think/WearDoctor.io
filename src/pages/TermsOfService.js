@@ -16,10 +16,10 @@ const Text = styled.div`
     ${tw`mt-2 leading-loose`}
   }
   h1 {
-    ${tw`text-3xl font-bold mt-10`}
+    ${tw`text-3xl text-secondary-500 font-bold mt-10`}
   }
   h2 {
-    ${tw`text-2xl font-bold mt-8`}
+    ${tw`text-2xl text-secondary-300 font-bold mt-8`}
   }
   h3 {
     ${tw`text-xl font-bold mt-6`}
@@ -45,266 +45,870 @@ export default ({ headingText = "서비스 이용약관" }) => {
             <Heading>{headingText}</Heading>
           </HeadingRow>
           <Text>
-            <h2>Interpretation</h2>
+            <h1>제 1장 총칙</h1>
+            <h2>제1조 (목적)</h2>
             <p>
-              The words of which the initial letter is capitalized have meanings
-              defined under the following conditions.
+              본 서비스 약관은 회원이 비티소프트 주식회사(이하 ‘회사’라 함)가
+              제공하는 웨어닥터 서비스(영문명 Wear Doctor)를 이용함에 있어
+              회사와 회원 간의 권리, 의무 및 책임 사항을 규정함을 목적으로
+              합니다.
             </p>
+            <h2>제2조 (용어의 정의)</h2>
             <p>
-              The following definitions shall have the same meaning regardless
-              of whether they appear in singular or in plural.
-            </p>
-            <h2>Definitions</h2>
-            <p>For the purposes of these Terms and Conditions:</p>
-            <ul>
+              ① 본 약관에서 사용하는 용어의 정의는 다음과 같습니다.
               <li>
-                <strong>Affiliate</strong> means an entity that controls, is
-                controlled by or is under common control with a party, where
-                "control" means ownership of 50% or more of the shares, equity
-                interest or other securities entitled to vote for election of
-                directors or other managing authority.
+                ‘웨어닥터 서비스’(이하 ‘서비스’라 함)란 회사가 단말기에서
+                구현되는 애플리케이션을 통해 제공하는 건강관리 및 질환관리
+                서비스를 말하며, 이와 관련된 각종 부가 서비스를 포함합니다.
               </li>
               <li>
-                <strong>Company</strong> (referred to as either "the Company",
-                "We", "Us" or "Our" in this Agreement) refers to Treact Inc.,
-                Navi Mumbai.
+                ‘회원’이라 함은 ‘웨어닥터 애플리케이션’을 통해 이용약관에
+                동의하고 회원등록이 된 자로서, ‘서비스’를 이용하는 자를
+                말합니다.
               </li>
               <li>
-                <strong>Country</strong> refers to: Maharashtra, India
+                ‘웨어닥터 애플리케이션’(이하 ‘웨어닥터 App.’이라 함)이라 함은
+                ‘서비스’를 제공하기 위해 회사가 제공하는 프로그램을 말합니다.
               </li>
               <li>
-                <strong>Service</strong> refers to the Website.
+                ‘이용계약’이라 함은 서비스 이용과 관련하여 회사와 회원 간에
+                체결하는 계약 전체를 말하며, 본 약관은 이용계약의 일부를
+                구성합니다.
               </li>
               <li>
-                <strong>Terms and Conditions</strong> (also referred as "Terms")
-                mean these Terms and Conditions that form the entire agreement
-                between You and the Company regarding the use of the Service.
+                ‘단말기’라 함은 서비스에 접속하기 위해 회원이 이용하는 개인용
+                컴퓨터, 노트북, 스마트폰 등의 모든 전산장치를 말합니다.
               </li>
               <li>
-                <strong>Third-party Social Media Service</strong> means any
-                services or content (including data, information, products or
-                services) provided by a third-party that may be displayed,
-                included or made available by the Service.
+                ‘애플리케이션’이라 함은 단말기에 설치하여 본 서비스를 이용할 수
+                있도록 구성된 컴퓨터 프로그램을 말합니다.
               </li>
               <li>
-                <strong>Website</strong> refers to Treact, accessible from
-                https://treact.com
+                ‘개인정보’라 함은 개인정보 보호법 및 정보통신망 이용촉진 및
+                정보보호 등에 관한 법률(이하 ‘정보통신망법’이라 함)에서 정의하는
+                ‘개인정보’를 말합니다.
+              </li>
+            </p>
+            <p>
+              ② 본 약관에서 사용하는 용어의 정의는 본 약관에 한하여 유효하고,
+              제1항에서 정하는 것을 제외하고는 관계 법령 및 서비스 별 안내에서
+              정하는 바에 따르며, 그 외에는 일반 관례 및 상거래 관행에 따릅니다.
+            </p>
+            <h2>제 3 조 (약관의 효력 및 변경)</h2>
+            <p>
+              ① 본 약관은 서비스 화면에 게시하거나 기타 유사한 방법으로 공지하고
+              이용자가 동의함으로써 효력이 발생합니다. 다만, 약관의 내용은
+              회원이 연결화면을 통하여 볼 수 있도록 할 수 있습니다.
+            </p>
+            <p>
+              ② 회사는 합리적인 사유가 있는 경우 본 약관을 관계 법령에 위배되지
+              않는 범위 내에서 변경할 수 있으며, 약관이 변경될 경우에는 회사는
+              적용일자 및 변경사유를 명시하여 그 적용일자 7일 이전부터 전항의
+              방식 또는 기타 이와 유사한 방법으로 공지합니다. 다만, 회원에게
+              불리하게 약관을 변경하는 경우에는 최소한 그 적용일자 30일 이전부터
+              공지하고, 제5조의 방법으로 회원에게 개별 통지합니다. 단, 회원의
+              연락처 미 기재, 변경 후 미 수정 등으로 인하여 개별 통지가 어려운
+              경우에 한하여 본 항 전단의 공지를 함으로써 개별 통지한 것으로
+              간주합니다. 회사가 영업양도 등의 방법으로 본 약관에 따른
+              계약관계를 이전하고자 하는 경우, 그 사실을 회원에게 통지하고
+              회원이 이에 대하여 30일간 이의를 제기하지 않고 계속해서 서비스를
+              이용하는 경우에는 이에 대하여 동의한 것으로 봅니다.
+            </p>
+            <p>
+              ③ 회사가 제2항에 따라 변경 약관을 공지 또는 통지하면서 회원에게
+              약관 변경 적용일까지 거부의사를 표시하지 아니할 경우, 약관의
+              변경에 동의한 것으로 간주한다는 내용을 공지 또는 통지하였음에도
+              회원이 명시적으로 약관 변경에 대한 거부의사를 표시하지 아니하면,
+              회원이 변경 약관에 동의한 것으로 간주합니다. 회원은 전항에 의한
+              약관변경에 동의하지 않을 경우 회원 탈퇴(해지)를 요청할 수
+              있습니다.
+            </p>
+            <h2>제 4 조 (약관 외 준칙)</h2>
+            <p>
+              ① 본 약관에 명시되지 않은 사항은 전기통신기본법, 전기통신사업법,
+              독점규제 및 공정거래에 관한 법률(이하 ‘공정거래법’이라 함),
+              저작권법, 전자상거래 등에서의 소비자보호에 관한 법률(이하
+              ‘전자상거래법’이라 함), 정보통신망법, 개인정보 보호법 등 관계법령
+              및 회사가 제공하는 서비스에 관한 별도의 약관, 이용규정 또는
+              세부이용지침 등의 규정에 따릅니다.
+            </p>
+            <p>
+              ② 회사는 개별 서비스에 대해서는 별도의 이용약관 및 정책을 둘 수
+              있으며, 해당 내용이 본 약관과 상충할 경우에는 그러한 별도의
+              이용약관 및 정책이 우선하여 적용됩니다.
+            </p>
+            <h2>제 5 조 (회원에 대한 통지)</h2>
+            <p>
+              ① 회사는 e-mail이나 문자메시지(SMS/MMS), 애플리케이션 알림(PUSH)의
+              발송, 기타 적절한 통신수단을 이용하여 회원에 대한 통지를 할 수
+              있습니다.
+            </p>
+            <p>
+              ② 회사는 불특정 다수 회원에 대한 통지의 경우 서비스 애플리케이션
+              또는 게시판 등에 관련 내용을 상당 기간 게시함으로써 개별 통지에
+              갈음할 수 있습니다.
+            </p>
+            <p>
+              ③ 회사는 회원의 연락처 미 기재, 변경 후 미 수정 등으로 인하여 개별
+              통지가 어려운 경우에는 전항의 게시를 함으로써 개별 통지를 한
+              것으로 간주합니다.
+            </p>
+            <h1>제 2 장 서비스 이용 계약</h1>
+            <h2>제 6 조 (이용계약의 성립)</h2>
+            <p>
+              ① 회원은 서비스 화면을 통하여 회사가 고지하는 약관에 "동의합니다"
+              에 선택 시 본 약관에 동의할 수 있습니다.
+            </p>
+            <p>
+              ② 서비스의 이용계약은 아래 제7조에 의한 고객의 가입신청에 대하여
+              회사가 승낙함으로써 성립합니다.
+            </p>
+            <h2>제 7 조 (가입신청 및 가입정보의 변경)</h2>
+            <p>
+              ① 회원이 되기 위해서는 본 약관 동의, 개인정보 관련 제반 동의, 기타
+              서비스 관련 동의 절차를 거친 후 회사가 정한 양식에 따라
+              아이디(휴대전화번호), 패스워드(password), 이름 등 가입에 필요한
+              정보(이하 ‘가입정보’라 함)를 기입 후 등록하여 사용합니다.
+            </p>
+            <p>
+              ② 회원으로 가입하려는 자는 현재의 사실과 일치하는 완전한
+              가입정보를 제공하여야 하고, 회원은 가입정보가 변경되었을 경우
+              회원정보 변경 등 회사가 정한 절차에 따라 이를 수정해야 할 의무가
+              있습니다. 회원이 가입정보를 변경하지 않음으로써 발생하는 문제에
+              대하여 회사는 책임을 지지 않습니다.
+            </p>
+            <p>
+              ③ 모든 회원은 반드시 회원 본인의 정보를 제공하여야만 서비스를
+              이용할 수 있으며, 타인의 정보를 도용하거나 허위 정보를 등록하는 등
+              본인의 정보를 정확히 등록하지 않은 회원은 본 약관에 따라 해지 등
+              불이익을 받을 수 있으며, 관계 법령에 따라 제재 받을 수 있습니다.
+            </p>
+            <p>
+              ④ 회원가입은 본인의 정보를 통하여만 가입할 수 있으며, 회사는
+              회원이 등록한 정보에 대하여 확인조치를 할 수 있습니다. 회원은
+              회사의 확인조치에 대하여 적극 협력하여야 하며, 만일 이를 이행하지
+              아니할 경우 회사는 회원이 등록한 정보를 부정확한 것으로 처리할 수
+              있습니다.
+            </p>
+            <h2>제 8 조 (가입신청에 대한 승낙 및 그 유보 등)</h2>
+            <p>
+              ① 회사는 다음의 각 호의 어느 하나에 해당하는 가입신청에 대해
+              승낙을 하지 않을 수 있고, 해당 사유가 해소될 때까지 승낙을 유보할
+              수 있습니다.
+            </p>
+            <p>
+              <li>기술적 문제로 서비스 제공이 불가능한 경우</li>
+              <li>
+                다른 사람의 명의를 사용하거나 단말기 명의자의 허락 없이 단말
+                식별 정보 인증을 수행하는 등 허위 정보로 신청하는 경우
               </li>
               <li>
-                <strong>You</strong> means the individual accessing or using the
-                Service, or the company, or other legal entity on behalf of
-                which such individual is accessing or using the Service, as
-                applicable.
+                신청 시 필요한 사항을 허위로 기재하거나 중대한 사항에 기재 누락,
+                오기가 있는 경우
               </li>
-            </ul>
-            <h1>Acknowledgement</h1>
-            <p>
-              These are the Terms and Conditions governing the use of this
-              Service and the agreement that operates between You and the
-              Company. These Terms and Conditions set out the rights and
-              obligations of all users regarding the use of the Service.
+              <li>
+                사회의 안녕질서 또는 미풍양속을 저해하거나, 저해할 목적으로
+                신청한 경우
+              </li>
+              <li>
+                부정한 방법으로 서비스를 이용하여 회사에 피해를 줄 수 있다고
+                판단되는 경우
+              </li>
+              <li>
+                이전에 부정 이용 등으로 인하여 회원 자격을 상실한 적이 있는
+                경우. 다만, 자격 상실 이후 1년 이상 경과한 자로 회사의 회원
+                재가입 승낙을 받은 경우는 예외로 합니다.
+              </li>
+              <li>
+                회사로부터 이용제한 조치 등을 받은 회원이 그 이용제한 조치기간
+                중에 이용계약을 임의 해지하고 별도의 이용신청을 하는 경우
+              </li>
+              <li>서비스 관련 설비 용량이 부족한 경우</li>
+              <li>영리를 추구할 목적으로 서비스를 이용하고자 하는 경우</li>
+              <li>서비스와 경쟁관계에 있는 자가 신청하는 경우</li>
+              <li>만 14세 미만 아동이 서비스 이용 신청을 한 경우</li>
+              <li>
+                기타 회사가 정한 가입신청 요건이 만족되지 않았거나 회사의 사정상
+                필요하다고 인정되는 경우
+              </li>
             </p>
             <p>
-              Your access to and use of the Service is conditioned on Your
-              acceptance of and compliance with these Terms and Conditions.
-              These Terms and Conditions apply to all visitors, users and others
-              who access or use the Service.
+              ② 회사는 회원가입 이후에 제1항의 사유가 있음을 알게 된 경우,
+              이용계약의 해지, 중단 등 이용제한 조치를 취할 수 있습니다.
+            </p>
+            <h2>제 9 조 (이용자 아이디 부여 및 변경 등)</h2>
+            <p>
+              ① 이용자 아이디 및 비밀번호의 관리 책임은 회원에게 있습니다. 이를
+              소홀이 관리하여 발생하는 서비스 이용상의 손해 또는 제3자에 의한
+              부정이용 등에 대한 책임은 회원에게 있으며 회사는 그에 대한 책임을
+              지지 않습니다.
             </p>
             <p>
-              By accessing or using the Service You agree to be bound by these
-              Terms and Conditions. If You disagree with any part of these Terms
-              and Conditions then You may not access the Service.
+              ② 본 서비스의 이용자 아이디는 회원 본인의 동의 하에 기관, 회사
+              또는 자회사가 운영하는 스마트폰 애플리케이션 또는 웹사이트의 회원
+              아이디와 연결될 수 있습니다.
             </p>
             <p>
-              You represent that you are over the age of 18. The Company does
-              not permit those under 18 to use the Service.
+              ③ 이용자 아이디는 다음 각 호의 어느 하나에 해당하는 경우에는
+              회원의 요청 또는 회사의 직권으로 변경 또는 이용을 정지할 수
+              있습니다.
             </p>
             <p>
-              Your access to and use of the Service is also conditioned on Your
-              acceptance of and compliance with the Privacy Policy of the
-              Company. Our Privacy Policy describes Our policies and procedures
-              on the collection, use and disclosure of Your personal information
-              when You use the Application or the Website and tells You about
-              Your privacy rights and how the law protects You. Please read Our
-              Privacy Policy carefully before using Our Service.
-            </p>
-            <h1>Links to Other Websites</h1>
-            <p>
-              Our Service may contain links to third-party web sites or services
-              that are not owned or controlled by the Company.
+              <li>이용자 아이디가 개인정보 유출 우려가 있는 경우</li>
+              <li>타인에게 혐오감을 주거나 미풍양속에 어긋나는 경우</li>
+              <li>
+                회사, 회사의 서비스 또는 서비스 운영자 등의 명칭과 동일하거나
+                오인 등의 우려가 있는 경우
+              </li>
+              <li>기타 합리적인 사유가 있는 경우</li>
             </p>
             <p>
-              The Company has no control over, and assumes no responsibility
-              for, the content, privacy policies, or practices of any third
-              party web sites or services. You further acknowledge and agree
-              that the Company shall not be responsible or liable, directly or
-              indirectly, for any damage or loss caused or alleged to be caused
-              by or in connection with the use of or reliance on any such
-              content, goods or services available on or through any such web
-              sites or services.
+              ④ 기타 회원 개인정보 관리 및 변경 등에 관한 사항은 서비스 별
+              안내에서 정하는 바에 의합니다.
+            </p>
+            <h2>제 10 조 (서비스의 이용에 필수적인 건강정보의 제공)</h2>
+            <p>
+              ① 회원이 회원의 건강관리를 위한 본 서비스를 이용하기 위해서는,
+              본인의 생년월일, 성별, 키, 체중, 활동량, 혈압 등 기타 회사가
+              필요하다고 인정하는 최소한의 건강에 관한 완전한 정보를 정확하게
+              제공하여야 합니다.
             </p>
             <p>
-              We strongly advise You to read the terms and conditions and
-              privacy policies of any third-party web sites or services that You
-              visit.
-            </p>
-            <h1>Termination</h1>
-            <p>
-              We may terminate or suspend Your access immediately, without prior
-              notice or liability, for any reason whatsoever, including without
-              limitation if You breach these Terms and Conditions.
+              ② 일부 서비스에 대하여, 회사는 해당 서비스를 이용하려는 회원에게
+              추가적인 정보의 제출을 요구할 수 있고, 회원은 회사가 요구하는
+              완전한 정보를 정확하게 제공하여야 합니다. 회원이 해당 정보를
+              제공하지 아니하는 경우 그러한 서비스의 이용이 제한될 수 있습니다.
             </p>
             <p>
-              Upon termination, Your right to use the Service will cease
-              immediately.
-            </p>
-            <h1>Limitation of Liability</h1>
-            <p>
-              Notwithstanding any damages that You might incur, the entire
-              liability of the Company and any of its suppliers under any
-              provision of this Terms and Your exclusive remedy for all of the
-              foregoing shall be limited to the amount actually paid by You
-              through the Service or 100 USD if You haven't purchased anything
-              through the Service.
+              ③ 일부 서비스에 대하여, 회사는 해당 서비스를 이용하려는 회원에게
+              본인 확인에 필요한 추가 인증 절차를 요구할 수 있고, 회원은 해당
+              인증 절차를 정상적으로 완료하여야 합니다.{" "}
             </p>
             <p>
-              To the maximum extent permitted by applicable law, in no event
-              shall the Company or its suppliers be liable for any special,
-              incidental, indirect, or consequential damages whatsoever
-              (including, but not limited to, damages for loss of profits, loss
-              of data or other information, for business interruption, for
-              personal injury, loss of privacy arising out of or in any way
-              related to the use of or inability to use the Service, third-party
-              software and/or third-party hardware used with the Service, or
-              otherwise in connection with any provision of this Terms), even if
-              the Company or any supplier has been advised of the possibility of
-              such damages and even if the remedy fails of its essential
-              purpose.
+              ④ 회사는 회원으로부터 제공받은 정보에 기초하여 서비스를
+              제공하므로, 회원은 회사에 정확한 정보가 제공될 수 있도록 주의를
+              다하여야 하고, 제공된 정보가 변경되었을 경우 회사가 정한 절차에
+              따라 즉시 정보를 수정하여야 합니다.{" "}
             </p>
             <p>
-              Some states do not allow the exclusion of implied warranties or
-              limitation of liability for incidental or consequential damages,
-              which means that some of the above limitations may not apply. In
-              these states, each party's liability will be limited to the
-              greatest extent permitted by law.
+              ⑤ 회원이 제공한 정보의 부정확으로 인하여 발생하는 문제에 대하여,
+              회사는 책임을 지지 않습니다.
             </p>
-            <h1>"AS IS" and "AS AVAILABLE" Disclaimer</h1>
+            <h2>제 11 조 (개인정보의 보호 및 사용)</h2>
             <p>
-              The Service is provided to You "AS IS" and "AS AVAILABLE" and with
-              all faults and defects without warranty of any kind. To the
-              maximum extent permitted under applicable law, the Company, on its
-              own behalf and on behalf of its Affiliates and its and their
-              respective licensors and service providers, expressly disclaims
-              all warranties, whether express, implied, statutory or otherwise,
-              with respect to the Service, including all implied warranties of
-              merchantability, fitness for a particular purpose, title and
-              non-infringement, and warranties that may arise out of course of
-              dealing, course of performance, usage or trade practice. Without
-              limitation to the foregoing, the Company provides no warranty or
-              undertaking, and makes no representation of any kind that the
-              Service will meet Your requirements, achieve any intended results,
-              be compatible or work with any other software, applications,
-              systems or services, operate without interruption, meet any
-              performance or reliability standards or be error free or that any
-              errors or defects can or will be corrected.
+              ① 회사는 관계 법령이 정하는 바에 따라 개인정보를 보호하기 위해
+              노력합니다. 개인정보의 보호 및 이용에 대해서는 관계 법령 및 회사의
+              개인정보처리방침이 적용됩니다. 단, 회사의 공식 사이트와
+              애플리케이션 이외의 링크된 사이트(애플리케이션에서 링크를 통해
+              표시되는 제3자가 제공하는 서비스 포함)에서는 회사의
+              개인정보처리방침이 적용되지 않습니다. 또한, 회원은 비밀번호 등이
+              타인에게 노출되지 않도록 철저히 관리해야 하며 회사는 회원의
+              귀책사유로 인해 노출된 정보에 대하여 책임을 지지 않습니다.
             </p>
             <p>
-              Without limiting the foregoing, neither the Company nor any of the
-              company's provider makes any representation or warranty of any
-              kind, express or implied: (i) as to the operation or availability
-              of the Service, or the information, content, and materials or
-              products included thereon; (ii) that the Service will be
-              uninterrupted or error-free; (iii) as to the accuracy,
-              reliability, or currency of any information or content provided
-              through the Service; or (iv) that the Service, its servers, the
-              content, or e-mails sent from or on behalf of the Company are free
-              of viruses, scripts, trojan horses, worms, malware, timebombs or
-              other harmful components.
+              ② 회사는 다음과 같은 경우에 관계 법령이 허용하는 범위 내에서
+              회원의 개인정보를 제3자에게 제공할 수 있습니다.
             </p>
             <p>
-              Some jurisdictions do not allow the exclusion of certain types of
-              warranties or limitations on applicable statutory rights of a
-              consumer, so some or all of the above exclusions and limitations
-              may not apply to You. But in such a case the exclusions and
-              limitations set forth in this section shall be applied to the
-              greatest extent enforceable under applicable law.
+              <li>회원의 동의를 받은 경우</li>
+              <li>
+                수사기관이나 기타 정부기관으로부터 정보제공을 요청받은 경우
+              </li>
+              <li>
+                통계작성, 학술연구 등에 필요한 경우로서 특정 개인을 알아볼 수
+                없는 형태로 개인정보를 제공하는 경우
+              </li>
+              <li>기타 법률에 의해 허용되는 경우</li>
             </p>
-            <h1>Governing Law</h1>
+            <h2>제 12 조 [계측기(Sensing Device) 연동 서비스에 관한 특칙]</h2>
             <p>
-              The laws of the Country, excluding its conflicts of law rules,
-              shall govern this Terms and Your use of the Service. Your use of
-              the Application may also be subject to other local, state,
-              national, or international laws.
-            </p>
-            <h1>Disputes Resolution</h1>
-            <p>
-              If You have any concern or dispute about the Service, You agree to
-              first try to resolve the dispute informally by contacting the
-              Company.
-            </p>
-            <h1>For European Union (EU) Users</h1>
-            <p>
-              If You are a European Union consumer, you will benefit from any
-              mandatory provisions of the law of the country in which you are
-              resident in.
-            </p>
-            <h1>United States Legal Compliance</h1>
-            <p>
-              You represent and warrant that (i) You are not located in a
-              country that is subject to the United States government embargo,
-              or that has been designated by the United States government as a
-              “terrorist supporting” country, and (ii) You are not listed on any
-              United States government list of prohibited or restricted parties.
-            </p>
-            <h1>Severability and Waiver</h1>
-            <h2>Severability</h2>
-            <p>
-              If any provision of these Terms is held to be unenforceable or
-              invalid, such provision will be changed and interpreted to
-              accomplish the objectives of such provision to the greatest extent
-              possible under applicable law and the remaining provisions will
-              continue in full force and effect.
-            </p>
-            <h2>Waiver</h2>
-            <p>
-              Except as provided herein, the failure to exercise a right or to
-              require performance of an obligation under this Terms shall not
-              effect a party's ability to exercise such right or require such
-              performance at any time thereafter nor shall be the waiver of a
-              breach constitute a waiver of any subsequent breach.
-            </p>
-            <h1>Translation Interpretation</h1>
-            <p>
-              These Terms and Conditions may have been translated if We have
-              made them available to You on our Service.
+              ① 회원은 서비스 가입 후 회사가 지정한 계측기(회원의 심박, 혈압,
+              걸음 수, 기타 건강 관련 데이터를 측정하여 소정의 서버로 전송하는
+              장치를 말합니다)를 구매하여 서비스와 연동되게 할 수 있습니다.
             </p>
             <p>
-              You agree that the original English text shall prevail in the case
-              of a dispute.
+              ② 회사는 계측기에 의하여 측정된 정보를 사용자로부터 별도의 동의를
+              받아, 동의 받은 범위 내에서 제휴회사(보험사 등 포함), 법인, 단체,
+              기관 등에 제공할 수 있습니다.
             </p>
-            <h1>Changes to These Terms and Conditions</h1>
+            <h1>제 3 장 서비스의 이용</h1>
+            <h2>제 13 조 (서비스의 이용)</h2>
             <p>
-              We reserve the right, at Our sole discretion, to modify or replace
-              these Terms at any time. If a revision is material We will make
-              reasonable efforts to provide at least 30 days' notice prior to
-              any new terms taking effect. What constitutes a material change
-              will be determined at Our sole discretion.
+              ① 회사는 회원 가입 시부터 즉시 서비스를 개시합니다. 단, 일부
+              서비스의 경우에는 지정된 일자부터 서비스를 개시할 수 있습니다.
             </p>
             <p>
-              By continuing to access or use Our Service after those revisions
-              become effective, You agree to be bound by the revised terms. If
-              You do not agree to the new terms, in whole or in part, please
-              stop using the website and the Service.
+              ② 회사의 업무상 또는 기술상의 장애로 인하여 서비스를 개시하지
+              못하는 경우에는 사이트, 애플리케이션에 공지하거나 회원에게 이를
+              통지합니다.
             </p>
-            <h1>Contact Us</h1>
             <p>
-              If you have any questions about these Terms and Conditions, You
-              can contact us:
+              ③ 회사는 모바일 단말기(아이폰 OS 단말기, 안드로이드 OS 단말기 등)
+              전용 애플리케이션을 제공하며, 회원은 회사에서 허용하는 범위 내의
+              단말기에서 전용 애플리케이션을 다운받고 설치하여 본 서비스를
+              이용할 수 있습니다. 단, 단말기의 종류 및 회원이 가입한 통신사에
+              따라 애플리케이션의 구성과 기능에 차이가 있을 수 있습니다.
             </p>
-            <ul>
-              <li>By email: support@example.com</li>
-              <li>By phone number: 408.996.1010</li>
-            </ul>
+            <h2>제 14 조 (서비스의 이용 시간)</h2>
+            <p>
+              ① 서비스는 회사의 업무상 또는 기술상 특별한 지장이 없는 한
+              연중무휴, 1일 24시간 운영을 원칙으로 합니다. 단, 회사는 시스템
+              정기점검, 증설 및 교체를 위해 회사가 정한 날이나 시간에 서비스를
+              일시 중단할 수 있으며, 예정되어 있는 작업으로 인한 서비스 일시
+              중단은 제5조에서 정한 방법을 통해 사전에 공지합니다.
+            </p>
+            <p>
+              ② 운영시간 또는 운영기간이 정해진 일부 서비스는 1일 24시간이 아닌,
+              별도로 정해진 기준에 따라 운영됩니다. 회사는 별도로 정해진 기준을
+              제5조에서 정한 방법을 통해 사전에 공지합니다.
+            </p>
+            <p>
+              ③ 회사는 긴급한 시스템 점검, 설비의 장애, 서비스 이용의 폭주,
+              국가비상사태, 정전 등 부득이한 사유가 발생한 경우 사전 예고 없이
+              일시적으로 서비스의 전부 또는 일부를 중단할 수 있습니다.
+            </p>
+            <p>
+              ④ 회사는 서비스 개편 등 서비스 운영 상 필요한 경우 회원에게 사전
+              예고 후 서비스의 전부 또는 일부의 제공을 중단할 수 있습니다.
+            </p>
+            <h2>제 15 조 (서비스의 내용)</h2>
+            <p>
+              서비스는 기본서비스, 상담 서비스, 부가서비스로 구성되어 있으며,
+              서비스의 구분, 상세 내용, 제공 조건은 다음 표와 같습니다.
+            </p>
+            <p>
+              <table>
+                <tr>
+                  <th>서비스 구분</th>
+                  <th>상세 내용</th>
+                  <th>제공 조건</th>
+                </tr>
+                <tr>
+                  <td rowSpan={4}>기본 서비스</td>
+                  <td>
+                    1) 회원은 회사가 제시하는 형태에 맞춰 자신의 키, 체중, 혈압,
+                    심박, 운동 및 기타 정보를 기록하면서 자가관리를 할 수
+                    있습니다.
+                  </td>
+                  <td rowSpan={4}>
+                    회원은 건강 서비스를 관리하기 위해서는 본인의 건강 정보를
+                    입력한 후 사용할 수 있습니다.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    2) 회원은 회사가 연동을 지원하는 계측기를 이용하여 혈당,
+                    운동 및 기타 정보를 자동으로 기록하면서 자가관리를 할 수
+                    있습니다.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    3) 회원은 기록된 내용을 바탕으로 한 통계를 볼 수 있습니다.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    4) 회원은 기타 입력된 기록에 대한 분석과 해당 기록을
+                    바탕으로 한 정보를 제공받을 수 있습니다.
+                  </td>
+                </tr>
+                <tr>
+                  <td>상담 서비스</td>
+                  <td>
+                    회원은 회원의 건강한 생활습관을 돕는 온라인 건강 상담
+                    프로그램(텍스트 기반 상담 )을 이용할 수 있고, 의료진 및
+                    전문가로부터 운동 및 생활습관에 대한 온라인 건강상담을
+                    이용할 수 있습니다.
+                  </td>
+                  <td>
+                    회사와 제휴 된 기업, 병원의 고객인 회원이 해당 기업,
+                    병원으로 구성된 그룹에 등록하는 경우, 이용 가능한
+                    서비스입니다.
+                  </td>
+                </tr>
+              </table>
+            </p>
+            <h2>제 16 조 (서비스의 이용환경)</h2>
+            <p>
+              ① 회원은 단말기에 애플리케이션을 다운로드 및 설치하여 서비스를
+              이용할 수 있습니다. 회원이 네트워크를 통하여 애플리케이션을
+              다운로드 및 설치하거나 서비스를 이용하는 경우 또는 단말기에서
+              백그라운드 작업이 진행되는 경우, 회원이 가입한 이동통신사에서 정한
+              별도의 요금이 발생하여 부과될 수 있는데, 이와 관련하여 회사는
+              책임을 지지 않습니다.
+            </p>
+            <p>
+              ② 회원의 단말기, 이동통신사의 특성과 운영체제(OS), 애플리케이션의
+              종류와 환경설정 등 회원의 이용 환경에 따라 서비스의 전부 또는
+              일부의 이용이 제한될 수 있습니다. 회사는 회원의 이용 환경으로
+              인하여 서비스의 전부 또는 일부의 이용이 제한되더라도 그로 인하여
+              발생하는 문제에 대하여 책임을 지지 않습니다. 회원은 애플리케이션
+              알림(PNS) 설정 등 서비스를 원활히 제공받기 위한 주의를 다하여야
+              합니다.
+            </p>
+            <h2>제 17 조 (서비스의 범위)</h2>
+            <p>
+              ① 본 서비스는, 회원 개인의 질병의 진단, 경감, 예방하는 등 의료
+              목적으로 제공하는 것이 아니라, 회원이 건강 관리를 하고, 인지행동
+              개선을 통해 만성질환 치료를 목적으로 제공하는 것으로서, 서비스에서
+              제공되는 운동의 기준은 임상학적 근거 내에서 이루어집니다.
+            </p>
+            <p>
+              ② 회원 개인의 신체나 건강에 이상이 발생하거나 기타 의학적인 판단이
+              필요한 경우, 회원은 본 서비스에 의존할 수 없고 의사 등 전문가의
+              상담, 검진, 진단을 받아야 함을 명확히 인지합니다.
+            </p>
+            <p>
+              ③ 서비스에서 제공되는 각종 정보는 표준 데이터와 회원이 제공한
+              정보에 근거하므로, 회원은 서비스에 반영되지 못한 개인적인 질병,
+              질환이나 모든 유전적 특성, 기타 구체적인 건강 상태를 고려하여
+              서비스를 이용하여야 합니다.
+            </p>
+            <p>
+              ④ 회사는 회원이 서비스를 통해 받거나 알게 된 정보의 정확성,
+              신뢰성, 효율성에 관한 책임을 부담하지 않습니다.
+            </p>
+            <h2>제 18 조 (서비스의 변경 및 제한)</h2>
+            <p>
+              ① 회사는 상당한 이유가 있는 경우에 운영상, 기술상의 필요에 따라
+              서비스의 전부 또는 일부를 변경할 수 있습니다. 다만, 변경된 내용이
+              중대하거나 회원에게 불리한 경우에는 회사는 변경될 서비스의 내용 및
+              제공일자를 제5조에서 정한 방법으로 회원에게 통지하고 서비스를
+              변경하여 제공할 수 있습니다.
+            </p>
+            <p>
+              ② 회사는 다음 각 호의 어느 하나에 해당하는 경우 서비스의 전부 또는
+              일부를 제한하거나 중단할 수 있습니다.
+              <li>
+                컴퓨터 등 정보통신설비의 보수점검⋅교체 및 고장, 통신의 두절 등의
+                사유가 발생한 경우
+              </li>
+              <li>서비스를 위한 설비의 보수 등 공사로 인해 부득이한 경우</li>
+              <li>
+                정전, 제반 설비의 장애 또는 서비스 이용의 폭주 등으로 정상적인
+                서비스 이용에 지장이 있는 경우
+              </li>
+              <li>회원이 회사의 영업활동을 방해하는 경우</li>
+              <li>
+                서비스 제공업자와의 계약종료, 경영상의 판단 등과 같은 회사의
+                제반 사정으로 서비스를 유지할 수 없는 경우
+              </li>
+              <li>
+                기타 천재지변, 국가비상사태 등 불가항력적 사유가 있는 경우
+              </li>
+              <li>
+                회사의 사업계획의 변경 또는 경영상의 사유로 더 이상의 서비스
+                제공이 불가능할 경우
+              </li>
+            </p>
+            <p>
+              ③ 제2항에 의한 서비스 중단의 경우에는 회사는 제5조에서 정한
+              방법으로 회원에게 통지합니다. 단, 회사가 통제할 수 없는 사유로
+              인한 서비스의 중단(회사의 고의⋅과실이 없는 디스크 장애, 시스템
+              장애 등)으로 인하여 사전 통지가 불가능한 경우에는 그러하지
+              아니합니다.
+            </p>
+            <p>
+              ④ 회사는 제2항에 따른 서비스의 제한, 중단으로 발생하는 문제에
+              대하여 회사에 고의 또는 중대한 과실이 없는 한 어떠한 책임도 지지
+              않습니다.
+            </p>
+            <h2>제 19 조 (게시물의 관리)</h2>
+            <p>
+              ① 게시물이 정보통신망법 및 저작권법 등 관련법에 위반되는 내용을
+              포함하는 경우, 권리자는 관련법에 정한 절차에 따라 해당 게시물의
+              게시중단 및 삭제 등을 요청할 수 있고, 회사는 관련법에 따라 조치를
+              취하여야 합니다.
+            </p>
+            <p>
+              ② 회사는 전항에 따른 권리자의 요청이 없는 경우라도 권리침해가
+              인정될 만한 사유가 있거나 기타 회사 정책 및 관련법에 위반되는
+              경우에는 관련법에 따라 해당 게시물에 대한 게재중단 등의 임시조치를
+              취할 수 있습니다.
+            </p>
+            <p>
+              ③ 회사는 회원이 작성한 게시물이 다음 각 호의 어느 하나에
+              해당한다고 판단되는 경우 해당 게시물을 삭제할 수 있고, 그 게시물의
+              양과 성격에 따라 해당 회원의 서비스 이용 중지 또는 회원자격의
+              제한을 할 수 있습니다.
+              <li>
+                회사의 서비스를 이용하여 얻은 정보를 회사의 사전 승낙 없이 복제
+                또는 유통시키거나 상업적으로 이용하는 경우
+              </li>
+              <li>
+                회원의 게시물이 정보통신망법 및 저작권법 등 관련법에 위반되는
+                내용을 포함하는 경우
+              </li>
+              <li>
+                관계 법령이 정한 절차에 따라 해당 게시물의 게시중단 및 삭제
+                요청이 들어 온 경우
+              </li>
+              <li>음란물을 포함하거나 음란사이트를 연결(링크)하는 경우</li>
+              <li>공공질서 및 미풍양속에 위반되는 내용인 경우</li>
+              <li>
+                서비스와 관련된 설비의 오작동이나 정보 등의 파괴 및 혼란을
+                유발시키는 내용, 컴퓨터 바이러스 감염자료를 등록 또는 유포하는
+                경우
+              </li>
+              <li>영리를 목적으로 하는 광고성 정보일 경우</li>
+              <li>
+                회사에서 공식적으로 인정한 서비스 이외의 서비스를 이용하여
+                상품을 판매하는 영업 활동, 광고를 통한 수익, 음란사이트를 통한
+                상업행위, 상용소프트웨어 불법배포, 해킹을 하는 경우
+              </li>
+              <li>
+                법률에 의하거나 계약상 또는 위임에 의하여 전송할 수 있는 권리가
+                없는 내용을 게시, 게재, e-mail 또는 기타 방법으로 전송하거나
+                공개하는 경우
+              </li>
+              <li>
+                본 약관에 따른 회원의 의무에 위반되거나, 게시판의 성격에
+                부합하지 않는 경우
+              </li>
+              <li>기타 관계 법령에 위배된다고 판단되는 경우</li>
+            </p>
+            <h2>제 20 조 (게시물의 저작권)</h2>
+            <p>
+              ① 회사가 작성하여 애플리케이션, 사이트 또는 서비스에 게시한
+              저작물의 저작권은 회사에 귀속됩니다.
+            </p>
+            <p>
+              ② 회원이 서비스 내에서 작성한 게시물(회원간 전달 포함)의 저작권은
+              해당 회원이 소유하며, 해당 게시물에 대한 책임도 회원에게 있습니다.
+            </p>
+            <p>
+              ③ 회사는 작성한 회원의 동의 없이 게시물을 다른 목적으로 사용할 수
+              없습니다.
+            </p>
+            <p>
+              ④ 회원이 등록한 게시물에 대하여 저작권 분쟁이 발생할 경우 이에
+              대한 책임은 회원이 부담하며 회사는 이에 대하여 책임을 지지
+              않습니다. 회원이 타인의 저작권 등을 침해하였음을 이유로 회사가
+              타인으로부터 손해배상청구 등 이의 제기를 받은 경우 회원은 회사의
+              면책을 위하여 노력하여야 하며, 회사가 면책되지 못한 경우 회원은
+              회사의 귀책부분을 초과하여 회사에 발생한 손해를 부담하여야 합니다.
+            </p>
+            <p>
+              ⑤ 회사는 특정 회원과의 이용계약이 적법하게 해지된 경우 해당 회원의
+              게시물을 삭제할 수 있습니다.
+            </p>
+            <p>
+              ⑥ 회원은 서비스에 게시된 자료 또는 서비스를 이용하여 얻은 정보를
+              회사의 사전승낙 없이 복제, 송신, 출판, 배포, 방송 및 기타 방법에
+              의해 영리목적으로 이용하거나 제3자에게 이용하게 할 수 없으며,
+              게시물에 대한 지식재산권 침해는 관계법령의 적용을 받습니다.
+            </p>
+            <h2>제 21 조 (정보의 제공, 광고의 게재 및 하이퍼링크)</h2>
+            <p>
+              ① 회사가 타 업체와 제휴하는 경우, 회원의 정보는 회원의 동의를 얻어
+              공유될 수 있습니다.
+            </p>
+            <p>
+              ② 회사는 회원의 동의를 얻어 광고를 포함하여 다양한 정보를
+              공지사항, e-mail, 문자메시지(SMS/MMS), 애플리케이션 알림(PNS),
+              우편 등의 방법으로 회원에게 제공할 수 있습니다.
+            </p>
+            <p>
+              ③ 회사는 서비스의 운용과 관련하여 애플리케이션 화면 등 서비스
+              화면의 일정 위치에 광고 등을 게재할 수 있습니다.
+            </p>
+            <p>
+              ④ 회원은 회사에서 제공하는 광고에 대한 임의 삭제, 비방, 기타 방해
+              행위 등을 할 수 없습니다.
+            </p>
+            <p>
+              ⑤ 회원이 서비스상에 게재되어 있는 광고를 이용하거나 서비스를 통한
+              광고주의 판촉활동에 참여하는 등의 방법으로 교신 또는 거래를 하는
+              것은 전적으로 회원과 광고주 간의 문제입니다. 회원과 광고주 간에
+              분쟁, 기타 문제가 발생하는 경우 회원과 광고주가 직접 해결하여야
+              하며, 이와 관련하여 회사는 책임을 지지 않습니다.
+            </p>
+            <h2>제 22 조 (서비스 재판매 금지)</h2>
+            <p>
+              회원은 상업적인 목적을 위하여 서비스 자체, 서비스 내용의 일부 또는
+              전부를 복사, 복제, 판매, 재판매 또는 양수도하는 방법으로 이용할 수
+              없습니다.
+            </p>
+            <h1>제 4 장 당사자의 의무</h1>
+            <h2>제 23 조 (회사의 의무)</h2>
+            <p>
+              ① 회사는 서비스 제공과 관련하여 알게 된 회원의 개인정보를 본인의
+              승낙 없이 제3자에게 누설, 배포하지 않습니다. 단, 관계법령에 의한
+              수사상의 목적으로 관계기관으로부터 요구 받은 경우나 주무관청의
+              요청이 있는 경우 등 관계 법령의 규정에 따른 적법한 절차에 의한
+              경우에는 그러하지 아니합니다.
+            </p>
+            <p>
+              ② 회사는 계속적이고 안정적으로 서비스를 제공하기 위하여 관련 설비
+              및 소프트웨어에 장애가 발생한 때에는 부득이한 사유가 없는 한 지체
+              없이 이를 수리 또는 복구합니다. 다만, 천재지변, 비상사태 또는 그
+              밖에 부득이한 경우에는 그 서비스를 일시 중단하거나 중지할 수
+              있습니다.
+            </p>
+            <p>
+              ③ 회사는 서비스와 관련한 회원의 불만사항이 접수되는 경우 이를
+              신속하게 처리하며, 신속한 처리가 곤란한 경우 그 사유와 처리 일정을
+              제5조의 방법으로 해당 회원에게 통지합니다.
+            </p>
+            <h2>제 24 조 (회원의 의무)</h2>
+            <p>
+              ① 회원은 서비스를 이용할 때 다음 각 호의 어느 하나에 해당하는
+              행위를 하여서는 아니 됩니다.
+              <li>
+                서비스를 제공받기 위해 이용 신청 또는 변경 시 허위 사실을
+                기재하거나, 다른 회원의 이용자 아이디 및 비밀번호 등 계정을
+                도용, 부정하게 사용하는 행위 및/또는 단말기 명의자의 허락 없이
+                단말 식별 정보 인증 절차, 본인 확인 인증 절차 등을 수행하는 행위
+              </li>
+              <li>
+                회사의 서비스를 이용하여 얻은 정보를 회사의 사전 승낙 없이 복제
+                또는 유통시키거나 상업적으로 이용하는 행위
+              </li>
+              <li>
+                타인의 명예를 손상시키거나 불이익을 주는 행위, 타인으로 가장하는
+                행위 및 타인과의 관계를 허위로 명시하는 행위
+              </li>
+              <li>
+                게시판 등에 음란물을 게재하거나 음란사이트를 연결(링크)하는 행위
+              </li>
+              <li>회사 또는 제3자의 저작권 등 기타 권리를 침해하는 행위</li>
+              <li>
+                공공질서 및 미풍양속에 위반되는 내용의 정보, 문장, 도형, 음성
+                등을 유포하는 행위
+              </li>
+              <li>
+                서비스와 관련된 설비의 오작동이나 정보 등의 파괴 및 혼란을
+                유발시키는 컴퓨터 바이러스 감염 자료를 등록 또는 유포하는 행위
+              </li>
+              <li>
+                서비스 운영을 고의로 방해하거나 서비스의 안정적 운영을 방해할 수
+                있는 정보를 전송하거나 수신자의 명시적인 수신 거부 의사에 반하여
+                광고성 스팸 정보를 전송하는 행위
+              </li>
+              <li>
+                타인으로 가장하는 행위 및 타인과의 관계를 허위로 명시하는 행위
+              </li>
+              <li>다른 회원의 개인정보를 수집, 저장, 공개하는 행위</li>
+              <li>
+                자기 또는 타인에게 재산상의 이익을 주거나 타인에게 손해를 가할
+                목적으로 허위의 정보를 유통시키는 행위
+              </li>
+              <li>
+                관련 법령에 의하여 전송 또는 게시가 금지되는 정보(컴퓨터
+                프로그램 포함)의 전송 또는 게시 행위
+              </li>
+              <li>기타 관계 법령에 위배되거나 공서양속에 반하는 행위</li>
+            </p>
+            <p>
+              ② 회원이 제1항에 명시된 행위를 한 경우에 회사는 부가적으로 제공한
+              혜택의 일부 또는 전부의 회수, 특정 서비스의 이용제한, 이용계약의
+              해지, 손해배상의 청구 등의 조치를 취할 수 있습니다. 회사가 이러한
+              조치를 취할 경우, 회사는 사전에 서비스 애플리케이션 또는 서비스
+              웹사이트 내 게재 또는 문자메시지(SMS/MMS), 애플리케이션 알림(PNS)
+              등으로 통보하며, 회원의 연락이 두절되거나 긴급을 요하는 것과 같이
+              부득이한 경우, 선 조치 후 사후 통보할 수 있습니다. 회원은 이러한
+              회사의 조치에 대하여 항변 사유가 있는 경우, 회사에 대하여 항변을
+              할 수 있습니다.
+            </p>
+            <p>
+              ③ 회원은 관계 법령, 본 약관의 규정, 이용안내 및 서비스상에 공지한
+              주의사항, 회사가 통지하는 사항 등을 준수하여야 하며, 기타 회사의
+              업무에 방해되는 행위를 하여서는 아니 됩니다.
+            </p>
+            <p>
+              ④ 회원은 회사에서 공식적으로 인정한 경우를 제외하고는 서비스를
+              이용하여 상품을 판매하는 영업 활동을 할 수 없으며, 특히 해킹,
+              광고를 통한 수익행위, 음란사이트를 통한 상업행위, 상용소프트웨어
+              불법배포 등을 할 수 없습니다. 이를 위반하여 발생한 영업 활동의
+              결과 및 손실, 관계기관에 의한 처벌 등 법적 조치 등에 관해서는
+              회사가 책임을 지지 않으며, 회원은 이와 같은 행위와 관련하여 회사가
+              입은 손해에 대하여 배상 의무를 집니다.
+            </p>
+            <h2>
+              제 25 조 (이용자 아이디 및 패스워드, 이동전화번호에 대한 회원의
+              의무)
+            </h2>
+            <p>
+              ① 회사는 서비스 내에서 일부 서비스 신청 시 이용요금을 부과할 수
+              있으므로, 회원은 이용자 아이디 및 패스워드, 이동전화번호 관리를
+              철저히 하여야 합니다.
+            </p>
+            <p>
+              ② 회원은 본인의 이용자 아이디 및 패스워드, 이동전화번호를
+              제3자에게 이용하게 해서는 안 됩니다.
+            </p>
+            <p>
+              ③ 회원이 본인의 이용자 아이디 및 패스워드, 이동전화번호를 도난
+              당하거나 제3자가 사용하고 있음을 인지한 경우에는 바로 회사에 이를
+              통보하고 회사의 안내가 있는 경우에는 그에 따라야 합니다.
+            </p>
+            <p>
+              ④ 이용자 아이디와 패스워드, 이동전화번호의 관리 소홀, 부정 사용에
+              의하여 발생하는 모든 결과에 대한 책임은 회원 본인에게 있으며,
+              회사의 시스템 고장 등 회사의 책임 사유로 발생하는 문제에 대해서는
+              회사가 책임을 집니다.
+            </p>
+            <p>⑤ 이용자 아이디는 회사의 사전 동의 없이 변경할 수 없습니다.</p>
+            <p>⑥ 회원은 이동전화번호 변경 시 회사에 알릴 의무가 있습니다.</p>
+            <h2>제 26 조 (개인정보 보호)</h2>
+            <p>
+              회사는 회원의 개인정보 보호를 매우 중요시하며, 개인정보보호법,
+              정보통신망법 등 관계 법령이 정하는 바에 따라 회원의 개인정보를
+              보호하기 위해 노력합니다. 개인정보의 보호 및 이용에 대해서는 관계
+              법령 및 회사의 개인정보처리방침이 적용됩니다.
+            </p>
+            <h2>제 27 조 (개인위치정보의 보호)</h2>
+            <p>
+              회사는 ‘위치정보의 보호 및 이용 등에 관한 법률’ 등 관계 법령이
+              정하는 바에 따라 회원의 개인위치정보를 보호하기 위해 노력합니다.
+              개인위치정보의 보호 및 이용에 관해서는 관련법 및 회사의
+              개인정보처리방침이 적용됩니다.
+            </p>
+            <h2>제 28 조 (개인정보처리업무의 위탁)</h2>
+            <p>
+              회사는 수집된 개인정보의 처리 및 관리 등의 업무를 스스로 수행함을
+              원칙으로 하나, 필요한 경우 그 업무의 일부 또는 전부를 회사가
+              선정한 회사에 위탁할 수 있습니다.
+            </p>
+            <h1>제 5 장 계약해지 및 이용제한</h1>
+            <h2>제 29 조 (계약해지 및 이용중지)</h2>
+            <p>
+              ① 회원이 다음 각 호의 어느 하나에 해당하는 행위를 하는 경우 또는
+              방송통신위원회 등 관계기관의 요청이 있는 경우 회사는 사전통지 없이
+              해당 회원과의 이용계약을 해지하거나 또는 기간을 정하여 해당 회원의
+              서비스 이용을 중지할 수 있으며, 해당 게시물을 사전 통지 없이
+              삭제할 수 있습니다.
+              <li>
+                회사에서 제공하는 서비스의 저장공간에 음란물을 게재하거나
+                음란사이트를 링크하거나 이를 배포하는 등 사회질서를 해치는 행위
+              </li>
+              <li>
+                공공질서 또는 미풍양속에 위배되는 내용의 정보, 문장, 도형, 음성
+                등을 유포하는 행위
+              </li>
+              <li>타인의 명예를 훼손하거나 타인을 모욕하는 행위</li>
+              <li>
+                회사 또는 제 3자의 저작권, 지식재산권, 기타 권리를 침해하는 행위
+              </li>
+              <li>
+                관계 법령에 의하여 제조, 수입, 전송 또는 게시가 금지되는 기술,
+                제품, 정보의 제조, 수입, 전송 또는 게시 행위
+              </li>
+              <li>범죄와 결부된다고 판단되는 행위</li>
+              <li>
+                해킹 또는 컴퓨터 바이러스를 유포하거나 타인의 의사에 반하여
+                광고성 정보 등 일정한 내용을 지속적으로 전송하는 행위
+              </li>
+              <li>다른 회원의 이용자 아이디를 부정 사용하는 행위</li>
+              <li>
+                다른 회원의 개인정보를 수집, 도용, 저장하거나 이를 유포하는 행위
+              </li>
+              <li>타인을 사칭하는 행위</li>
+              <li>서비스에 게재된 자료 및 저작물의 발신인을 위조하는 행위</li>
+              <li>타인을 지속적으로 괴롭히는 행위</li>
+              <li>
+                정당한 사유 없이 회원가입, 탈퇴를 수 차례 반복하여 금전적 이득을
+                취하거나 회사의 서비스 운영에 지장을 초래하는 행위
+              </li>
+              <li>본인의 이용자 아이디를 타인에게 양도하거나 매매하는 행위</li>
+              <li>
+                서비스 운영에 지장을 주거나 줄 우려가 있는 일체의 행위 및 본
+                약관, 회사의 타 서비스 이용약관, 기타 관계 법령에 위배되는 행위
+              </li>
+            </p>
+            <p>
+              ② 회사는 제1항에 의해 해지된 회원이 다시 가입신청을 하는 경우 일정
+              기간 그 승낙을 제한하거나 이용신청을 거절할 수 있습니다.
+            </p>
+            <p>
+              ③ 회원이 서비스를 해지하면, 해당 회원의 서비스 내의 ‘회원정보’는
+              모두 삭제됩니다. 다만 회원이 작성한 게시물 정보는 삭제되지 않을 수
+              있습니다.
+            </p>
+            <h1>제 7 장 손해배상, 면책 및 기타사항</h1>
+            <h2>제 30 조 (손해배상의 범위)</h2>
+            <p>
+              ① 회원이 본 약관의 규정 위반함으로 인하여 회사에 손해가 발생하게
+              되는 경우, 본 약관을 위반한 회원은 회사에 발생하는 통상 손해에
+              대하여 배상할 책임이 있으며, 특별한 사정으로 인한 손해는 회원이 그
+              사정을 알았거나 알 수 있었을 때에 배상책임이 있습니다.
+            </p>
+            <p>
+              ② 회원이 서비스를 이용함에 있어 행한 불법행위나 본 약관 위반행위로
+              인하여 회사가 당해 회원 이외의 제3자로부터 손해배상 청구 또는
+              소송을 비롯한 각종 이의제기를 받는 경우 회원이 직접 책임 부담함을
+              원칙으로 합니다. 다만, 회사가 당해 문제를 제기한 제3자에게 우선
+              대응할 수 있으며, 이 과정에서 회사에게 비용 및 손해가 발생한
+              경우에는 그에 대하여 당해 회원에게 구상권을 행사합니다.
+            </p>
+            <h2>제 31 조 (면책사항)</h2>
+            <p>
+              ① 회사는 다음 각 호의 어느 하나에 해당하는 경우에는 책임이
+              면제되며 손해배상을 하지 않습니다.
+              <li>
+                전시, 사변, 천재지변 또는 이에 준하는 국가비상사태 등
+                불가항력으로 서비스를 제공할 수 없는 경우
+              </li>
+              <li>
+                전기통신서비스 특성상 불가피한 사유로 서비스 제공이 불가능하거나
+                관련 설비의 보수, 교체, 정기점검, 공사 등 부득이한 사유로
+                일시적으로 서비스 제공을 중단하는 경우
+              </li>
+              <li>
+                회원의 고의, 과실 또는 서비스 미 숙지 등 귀책 사유로 서비스
+                이용의 장애, 회원정보 또는 자료의 소실 또는 손해가 발생한 경우
+              </li>
+              <li>
+                회원이 신상정보 및 전자우편 주소를 부실하게 기재하여 손해가
+                발생한 경우
+              </li>
+              <li>
+                회원이 자신의 이용자 아이디, 패스워드를 타인에게 알려주어
+                회원에게 어떠한 손해가 발생한 경우
+              </li>
+              <li>
+                회원이 서비스를 이용하여 얻을 수 있을 것으로 기대하는 손익이나
+                서비스를 통해 얻은 정보 및 자료 등으로 인해 발생한 손익의 경우
+              </li>
+              <li>
+                회원 상호간 및 회원과 제3자 상호 간에 서비스를 매개로 분쟁 및
+                손해가 발생한 경우
+              </li>
+              <li>
+                회원이 자료를 게시, 전송, 저장, 조회함으로써 법적인 책임이
+                발생한 경우
+              </li>
+              <li>
+                회원의 단말기 오류, 인터넷 접속장애로 서비스가 지연되거나
+                수행되지 않은 결과에 대해서 회원에게 발생한 손해의 경우
+              </li>
+              <li>
+                기타 무료로 제공되는 서비스에 대하여 회원에게 어떠한 손해가
+                발생한 경우
+              </li>
+              <li>
+                회원이 게재한 정보, 자료, 사실의 정확성 등을 신뢰한 결과
+                회원에게 손해가 발생한 경우
+              </li>
+            </p>
+            <p>
+              ② 회사의 서비스와 피연결회사(회사의 서비스 화면과 링크, 배너
+              등으로 연결된 사이트를 운영하는 회사를 말합니다)의 서비스는 상호
+              독자적으로 운영되며, 회사는 피연결회사와 회원 간에 이루어진 거래에
+              대하여 개입하지 않으며, 책임을 지지 않습니다.
+            </p>
+            <h2>제 32 조 (준거법, 관할법원)</h2>
+            <p>
+              ① 본 약관과 서비스에 관하여 분쟁이 발생할 경우 대한민국의 법률에
+              따르고, 회사와 회원은 분쟁의 해결을 위하여 성실히 협의합니다.
+            </p>
+            <p>
+              ② 서비스 이용으로 발생한 분쟁에 대해 소송이 제기되는 경우 양
+              당사자는 민사소송법상의 관할법원에 소를 제기할 수 있습니다.
+            </p>
+            <h2>[부칙]</h2>
+            <p>제1조 이 약관은 2023년 3월 3일부터 적용됩니다.</p>
           </Text>
         </ContentWithPaddingXl>
       </Container>

@@ -34,6 +34,20 @@ const Text = styled.div`
     }
   }
 `;
+const Table = styled.table`
+  ${tw`border border-t-2 border-t-gray-600 border-gray-200 my-4`}
+  th {
+    ${tw`border bg-gray-100 border-gray-200 m-5`}
+  }
+  td {
+    ${tw`border border-gray-200 px-5 py-2`}
+    ul {
+      li {
+        ${tw`m-0`}
+      }
+    }
+  } 
+`
 
 const Pli = styled.li`
   ${tw`ml-4`}
@@ -381,7 +395,7 @@ export default ({ headingText = "서비스 이용약관" }) => {
               서비스의 구분, 상세 내용, 제공 조건은 다음 표와 같습니다.
             </p>
             <p>
-              <table>
+              <Table>
                 <tr>
                   <th>서비스 구분</th>
                   <th>상세 내용</th>
@@ -431,7 +445,7 @@ export default ({ headingText = "서비스 이용약관" }) => {
                     서비스입니다.
                   </td>
                 </tr>
-              </table>
+              </Table>
             </p>
             <h2>제 16 조 (서비스의 이용환경)</h2>
             <p>

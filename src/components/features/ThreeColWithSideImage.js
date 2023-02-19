@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 //eslint-disable-next-line
-import { css } from "styled-components/macro";
-import { SectionHeading } from "components/misc/Headings.js";
+// import { css } from "styled-components/macro";
+// import { SectionHeading } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 
 import defaultCardImage from "images/shield-icon.svg";
@@ -16,7 +16,7 @@ import {
   previousStep04,
   previousStep05,
   previousStep06,
-} from 'images/steps/index';
+} from "images/steps/index";
 
 const Container = tw.div`relative`;
 
@@ -30,7 +30,7 @@ const Heading = styled.div`
     }
   }`;
 
-const VerticalSpacer = tw.div`mt-10 w-full`
+const VerticalSpacer = tw.div`mt-10 w-full`;
 
 const Column = styled.div`
   ${tw`sm:w-1/2 max-w-md`}
@@ -54,15 +54,41 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
   ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
 `;
 
-export default ({steps = null, heading = null}) => {
+export default ({ steps = null, heading = null }) => {
   const defaultSteps = [
-    { imageSrc: previousStep01, title: "previousStep01", description: "Wear Doctor app installation", button: "웨어닥터 다운로드" },
-    { imageSrc: previousStep02, title: "previousStep02", description: "Health Connect app installation", button: "Health Connet 다운로드" },
-    { imageSrc: previousStep03, title: "previousStep03", description: "Launch Health Connect app" },
-    { imageSrc: previousStep04, title: "previousStep04", description: "Select app permissions" },
-    { imageSrc: previousStep05, title: "previousStep05", description: "Select Wear Doctor and Samsung Health" },
-    { imageSrc: previousStep06, title: "previousStep06", description: "Allow all app access" },
-  ]
+    {
+      imageSrc: previousStep01,
+      title: "previousStep01",
+      description: "Wear Doctor app installation",
+      button: "웨어닥터 다운로드",
+    },
+    {
+      imageSrc: previousStep02,
+      title: "previousStep02",
+      description: "Health Connect app installation",
+      button: "Health Connet 다운로드",
+    },
+    {
+      imageSrc: previousStep03,
+      title: "previousStep03",
+      description: "Launch Health Connect app",
+    },
+    {
+      imageSrc: previousStep04,
+      title: "previousStep04",
+      description: "Select app permissions",
+    },
+    {
+      imageSrc: previousStep05,
+      title: "previousStep05",
+      description: "Select Wear Doctor and Samsung Health",
+    },
+    {
+      imageSrc: previousStep06,
+      title: "previousStep06",
+      description: "Allow all app access",
+    },
+  ];
 
   if (!steps) steps = defaultSteps;
   if (!heading) heading = "previous-text-1";
@@ -70,13 +96,18 @@ export default ({steps = null, heading = null}) => {
   return (
     <Container>
       <ThreeColumnContainer>
-        <Heading><img src={require(`../../images/steps/${heading}.png`)} /></Heading>
+        <Heading>
+          <img src={require(`../../images/steps/${heading}.png`)} alt={""} />
+        </Heading>
         <VerticalSpacer />
         {steps.map((step, i) => (
           <Column key={i}>
             <Card>
-              <div className="imageContainer"> 
-                <img src={step.imageSrc || defaultCardImage} alt={step.description} />
+              <div className="imageContainer">
+                <img
+                  src={step.imageSrc || defaultCardImage}
+                  alt={step.description}
+                />
                 {step.button && <PrimaryButton>{step.button}</PrimaryButton>}
               </div>
             </Card>

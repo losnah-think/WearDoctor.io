@@ -34,6 +34,21 @@ const Text = styled.div`
     }
   }
 `;
+const Table = styled.table`
+  ${tw`border border-t-2 border-t-gray-600 border-gray-200 my-4`}
+  th {
+    ${tw`border bg-gray-100 border-gray-200 m-5`}
+  }
+  td {
+    ${tw`border border-gray-200 px-5 py-2`}
+    ul {
+      li {
+        ${tw`m-0`}
+      }
+    }
+  } 
+`;
+
 export default ({ headingText = "개인정보 처리방침" }) => {
   return (
     <AnimationRevealPage>
@@ -132,7 +147,7 @@ export default ({ headingText = "개인정보 처리방침" }) => {
               </li>
             </p>
             <p>
-              <table>
+              <Table>
                 <tr>
                   <th>구분</th>
                   <th>상세 내용</th>
@@ -201,7 +216,7 @@ export default ({ headingText = "개인정보 처리방침" }) => {
                     허용하면 정보 수집에 동의한 것으로 봅니다
                   </td>
                 </tr>
-              </table>
+              </Table>
             </p>
             <p>
               다만, 내부 방침에 따라 일정 기간 보관 후 파기하는 정보는 아래와
@@ -265,7 +280,7 @@ export default ({ headingText = "개인정보 처리방침" }) => {
               <li>의료기관의 처방을 위해 개인식별정보를 제공하는 경우</li>
             </p>
             <p>
-              <table>
+              <Table>
                 <tr>
                   <th>제공하는 개인정보</th>
                   <th>제공받는 기관</th>
@@ -282,7 +297,7 @@ export default ({ headingText = "개인정보 처리방침" }) => {
                   <td>의료법, 개인정보보호법, 정보주체의 동의</td>
                   <td>1년</td>
                 </tr>
-              </table>
+              </Table>
             </p>
             <h1>4. 개인정보처리 위탁</h1>
             <p>
@@ -487,7 +502,7 @@ export default ({ headingText = "개인정보 처리방침" }) => {
               제출하셔야 합니다.
             </p>
             <p>
-              <table>
+              <Table>
                 <tr>
                   <th>구분</th>
                   <th>소속</th>
@@ -500,7 +515,7 @@ export default ({ headingText = "개인정보 처리방침" }) => {
                   <td>02-837-6800</td>
                   <td>weardoctor@gmail.com</td>
                 </tr>
-              </table>
+              </Table>
             </p>
             <h1>9. 개인정보 보호 책임자</h1>
             <p>
@@ -511,7 +526,7 @@ export default ({ headingText = "개인정보 처리방침" }) => {
               </strong>
             </p>
             <p>
-              <table>
+              <Table>
                 <tr>
                   <th>구분</th>
                   <th>소속</th>
@@ -530,7 +545,7 @@ export default ({ headingText = "개인정보 처리방침" }) => {
                   <td>02-837-6800</td>
                   <td>weardoctor@gmail.com</td>
                 </tr>
-              </table>
+              </Table>
             </p>
             <p>
               정보주체는 회사의 서비스를 이용하시면서 발생한 모든 개인정보 보호

@@ -15,10 +15,10 @@ const SixColumns = tw.div`flex flex-wrap text-center sm:text-left justify-center
 
 const Column = tw.div`px-4 sm:px-0 sm:w-1/4 md:w-auto mt-12`;
 
-const ColumnHeading = tw.h5`uppercase font-bold`;
+// const ColumnHeading = tw.h5`uppercase font-bold`;
 
 const LinkList = tw.ul`mt-6 text-sm font-medium`;
-// const LinkListItem = tw.li`mt-3`;
+const LinkListItem = tw.li`mt-3`;
 const Link = tw.a`border-b-2 border-transparent hocus:border-gray-700 pb-1 transition duration-300`;
 
 const SubscribeNewsletterColumn = tw(
@@ -42,7 +42,7 @@ const LogoText = tw.h5`ml-2 text-xl font-black tracking-wider text-gray-800`;
 
 const CopywrightNotice = tw.p`text-center text-sm sm:text-base mt-8 md:mt-0 font-medium text-gray-500`;
 
-const SocialLinksContainer = tw.div`mt-8 md:mt-0 flex`;
+// const SocialLinksContainer = tw.div`mt-8 md:mt-0 flex`;
 // const SocialLink = styled.a`
 //   ${tw`cursor-pointer p-2 rounded-full bg-gray-900 text-gray-100 hover:bg-gray-700 transition duration-300 mr-4 last:mr-0`}
 //   svg {
@@ -58,16 +58,10 @@ export default () => {
           <Column>
             {/* <ColumnHeading>Main</ColumnHeading> */}
             <LinkList>
-              <ColumnHeading>
+              <LinkListItem>
                 <Link href="/privacy">개인정보 처리방침</Link>
-              </ColumnHeading>
+              </LinkListItem>
               {/* <LinkListItem>
-                <Link href="#">FAQs</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Support</Link>
-              </LinkListItem>
-              <LinkListItem>
                 <Link href="#">About Us</Link>
               </LinkListItem> */}
             </LinkList>
@@ -75,9 +69,9 @@ export default () => {
           <Column>
             {/* <ColumnHeading>Product</ColumnHeading> */}
             <LinkList>
-              <ColumnHeading>
+              <LinkListItem>
                 <Link href="/terms">서비스 이용약관</Link>
-              </ColumnHeading>
+              </LinkListItem>
               {/* <LinkListItem>
                 <Link href="#">Personal</Link>
               </LinkListItem>
@@ -144,10 +138,10 @@ export default () => {
             <LogoText>Wear Doctor</LogoText>
           </LogoContainer>
           <CopywrightNotice>
-            &copy; 2023 (주)BTSOFT. All Rights Reserved.
+            &copy; 2023 BTSOFT. All Rights Reserved.
           </CopywrightNotice>
-          <SocialLinksContainer>
-            {/* <SocialLink href="https://facebook.com">
+          {/* <SocialLinksContainer>
+            <SocialLink href="https://facebook.com">
               <FacebookIcon />
             </SocialLink>
             <SocialLink href="https://twitter.com">
@@ -155,8 +149,8 @@ export default () => {
             </SocialLink>
             <SocialLink href="https://youtube.com">
               <YoutubeIcon />
-            </SocialLink> */}
-          </SocialLinksContainer>
+            </SocialLink>
+          </SocialLinksContainer> */}
         </ThreeColRow>
       </Content>
     </Container>

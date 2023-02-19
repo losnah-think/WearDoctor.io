@@ -11,7 +11,7 @@ import Features from "components/features/ThreeColWithSideImage.js";
 // import Testimonial from "components/testimonials/TwoColumnWithImageAndRating.js";
 // import FAQ from "components/faqs/SingleCol.js";
 // import GetStarted from "components/cta/GetStarted";
-import Footer from "components/footers/FiveColumnWithBackground.js";
+import Footer from "components/footers/FiveColumnWithInputForm";
 import {
   watchStep01,
   watchStep02,

@@ -38,6 +38,15 @@ const Table = styled.table`
   ${tw`border border-t-2 border-t-gray-600 border-gray-200 my-4`}
   th {
     ${tw`border bg-gray-100 border-gray-200 m-5`}
+    &.width-13 {
+      ${tw`w-p13`}
+    }
+    &.width-18 {
+      ${tw`w-p18`}
+    }
+    &.width-25 {
+      ${tw`w-p25`}
+    }
   }
   td {
     ${tw`border border-gray-200 px-5 py-2`}
@@ -264,12 +273,12 @@ export default ({ headingText = "개인정보 처리방침" }) => {
             <p>
               <Table>
                 <tr>
-                  <th>제공하는 개인정보</th>
-                  <th>제공받는 기관</th>
-                  <th>제공시기</th>
+                  <th className="width-25">제공하는 개인정보</th>
+                  <th className="width-18">제공받는 기관</th>
+                  <th className="width-13">제공시기</th>
                   <th>제공목적</th>
                   <th>제공근거</th>
-                  <th>보유기간</th>
+                  <th className="width-13">보유기간</th>
                 </tr>
                 <tr>
                   <td>

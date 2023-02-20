@@ -24,9 +24,15 @@ const ThreeColumnContainer = styled.div`
   ${tw`flex flex-col items-center md:items-stretch sm:flex-row flex-wrap justify-center max-w-screen-lg mx-auto py-20 md:py-24`}
 `;
 const Heading = styled.div`
-  ${tw`flex flex-col items-center justify-center mx-32`}
+  ${tw`flex flex-col items-center justify-center mx-16`}
+    p {
+      ${tw`relative text-xl md:text-3xl lg:text-4xl font-bold mb-5 md:mb-10`}
+    }
+    hr {
+      ${tw`border-2 md:border-3 border-primary-500`}
+    }
     img {
-      ${tw`md:w-4/6`}
+      ${tw`hidden sm:block absolute top-[0rem] left-[18.6rem] md:top-[0.5rem] md:left-[28.2rem] lg:top-[1rem] lg:left-[33.8rem] w-12 md:w-16`}
     }
   }`;
 
@@ -97,7 +103,12 @@ export default ({ steps = null, heading = null }) => {
     <Container>
       <ThreeColumnContainer>
         <Heading>
-          <img src={require(`../../images/steps/${heading}.png`)} alt={""} />
+          <p>웨어닥터 초기 셋팅</p>
+          <p>
+            웨어닥터 앱 실행 전 우선 진행해주세요!
+            <img src={require(`../../images/check-icon.png`)} alt={""} />
+            <hr />
+          </p>
         </Heading>
         <VerticalSpacer />
         {steps.map((step, i) => (

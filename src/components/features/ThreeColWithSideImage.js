@@ -99,9 +99,15 @@ export default ({ steps = null, heading = null }) => {
   if (!steps) steps = defaultSteps;
   if (!heading) heading = "previous-text-1";
 
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
   const handleMove = (title) => {
     if (title === "previousStep01") {
+      window.location.href = isMobile ? "" : "";
     } else if (title === "previousStep02") {
+      window.location.href = isMobile
+        ? "market://details?id=com.google.android.apps.healthdata"
+        : "https://play.google.com/store/apps/details?id=com.google.android.apps.healthdata&hl=ko&gl=US";
     } else return;
   };
 

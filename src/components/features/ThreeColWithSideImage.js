@@ -26,15 +26,21 @@ const ThreeColumnContainer = styled.div`
 const Heading = styled.div`
   ${tw`flex flex-col items-center justify-center mx-16`}
     p {
-      ${tw`relative text-xl md:text-3xl lg:text-4xl font-bold mb-5 md:mb-10`}
+      ${tw`relative mb-5 md:mb-8 lg:mb-10`}
     }
     hr {
-      ${tw`border-2 md:border-3 border-primary-500`}
+      ${tw`sm:border md:border-2 lg:border-3 border-primary-500`}
     }
     img {
-      ${tw`hidden sm:block absolute top-[0rem] left-[18.6rem] md:top-[0.5rem] md:left-[28.2rem] lg:top-[1rem] lg:left-[33.8rem] w-12 md:w-16`}
+      ${tw`hidden sm:block absolute top-[0.5rem] left-[17.2rem] md:top-[0.5rem] md:left-[22.8rem] lg:top-[0.5rem] lg:left-[28.5rem] w-8 md:w-12 lg:w-16`}
     }
   }`;
+const HeadingBold = styled.p`
+  ${tw`text-2xl md:text-3xl lg:text-4xl font-bold text-secondary-900`}
+`;
+const HeadingDescription = styled.p`
+  ${tw`text-lg md:text-2xl lg:text-3xl font-light text-secondary-400`}
+`;
 
 const VerticalSpacer = tw.div`mt-10 w-full`;
 
@@ -45,7 +51,7 @@ const Column = styled.div`
 const Card = styled.div`
   ${tw`flex flex-col sm:flex-row justify-center items-center sm:items-start text-center sm:text-left h-full mx-4 px-2 py-8`}
   .imageContainer {
-    ${tw`relative text-center p-5`}
+    ${tw`relative text-center py-5`}
     img {
       ${tw`w-full md:w-auto h-full md:h-auto`}
     }
@@ -60,7 +66,7 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
   ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
 `;
 
-export default ({ steps = null, heading = null }) => {
+export default ({ steps = null, heading = null, description = false }) => {
   const defaultSteps = [
     {
       imageSrc: previousStep01,
@@ -97,7 +103,7 @@ export default ({ steps = null, heading = null }) => {
   ];
 
   if (!steps) steps = defaultSteps;
-  if (!heading) heading = "previous-text-1";
+  if (!heading) heading = "웨어닥터 초기 셋팅";
 
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
@@ -115,12 +121,14 @@ export default ({ steps = null, heading = null }) => {
     <Container>
       <ThreeColumnContainer>
         <Heading>
-          <p>웨어닥터 초기 셋팅</p>
-          <p>
-            웨어닥터 앱 실행 전 우선 진행해주세요!
-            <img src={require(`../../images/check-icon.png`)} alt={""} />
-            <hr />
-          </p>
+          <HeadingBold>{heading}</HeadingBold>
+          {description && (
+            <HeadingDescription>
+              웨어닥터 앱 실행 전 우선 진행해주세요!
+              <img src={require(`../../images/check-icon.png`)} alt={""} />
+              <hr />
+            </HeadingDescription>
+          )}
         </Heading>
         <VerticalSpacer />
         {steps.map((step, i) => (

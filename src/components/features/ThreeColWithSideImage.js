@@ -72,7 +72,7 @@ export default ({ steps = null, heading = null }) => {
       imageSrc: previousStep02,
       title: "previousStep02",
       description: "Health Connect app installation",
-      button: "Health Connet 다운로드",
+      button: "Health Connect 다운로드",
     },
     {
       imageSrc: previousStep03,

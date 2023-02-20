@@ -24,8 +24,6 @@ import {
 // import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
 // import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
 
-const heading = "watch-text-1";
-
 export default () => {
   // const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
   // const HighlightedText = tw.span`text-primary-500`;
@@ -33,9 +31,9 @@ export default () => {
   return (
     <AnimationRevealPage>
       <Hero roundedHeaderButton={true} />
-      <Features />
+      <Features description={true} />
       <Features
-        heading={heading}
+        heading={"워치 설정 방법"}
         steps={[
           {
             imageSrc: watchStep01,

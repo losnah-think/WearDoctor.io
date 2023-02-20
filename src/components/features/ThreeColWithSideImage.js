@@ -99,6 +99,12 @@ export default ({ steps = null, heading = null }) => {
   if (!steps) steps = defaultSteps;
   if (!heading) heading = "previous-text-1";
 
+  const handleMove = (title) => {
+    if (title === "previousStep01") {
+    } else if (title === "previousStep02") {
+    } else return;
+  };
+
   return (
     <Container>
       <ThreeColumnContainer>
@@ -119,7 +125,11 @@ export default ({ steps = null, heading = null }) => {
                   src={step.imageSrc || defaultCardImage}
                   alt={step.description}
                 />
-                {step.button && <PrimaryButton>{step.button}</PrimaryButton>}
+                {step.button && (
+                  <PrimaryButton onClick={() => handleMove(step.title)}>
+                    {step.button}
+                  </PrimaryButton>
+                )}
               </div>
             </Card>
           </Column>

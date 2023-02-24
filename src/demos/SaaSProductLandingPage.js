@@ -31,9 +31,12 @@ export default () => {
   return (
     <AnimationRevealPage>
       <Hero roundedHeaderButton={true} />
-      <Features description={true} />
       <Features
-        heading={"워치 설정 방법"}
+        description="웨어닥터 앱 실행 전 우선 진행해주세요!"
+        useUnderLine={true}
+      />
+      <Features
+        heading="워치 설정 방법"
         steps={[
           {
             imageSrc: watchStep01,

@@ -66,7 +66,12 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
   ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
 `;
 
-export default ({ steps = null, heading = null, description = false }) => {
+export default ({
+  steps = null,
+  heading = null,
+  description = null,
+  useUnderLine = false,
+}) => {
   const defaultSteps = [
     {
       imageSrc: previousStep01,
@@ -124,9 +129,13 @@ export default ({ steps = null, heading = null, description = false }) => {
           <HeadingBold>{heading}</HeadingBold>
           {description && (
             <HeadingDescription>
-              웨어닥터 앱 실행 전 우선 진행해주세요!
-              <img src={require(`../../images/check-icon.png`)} alt={""} />
-              <hr />
+              {description}
+              {useUnderLine && (
+                <>
+                  <img src={require(`../../images/check-icon.png`)} alt={""} />
+                  <hr />
+                </>
+              )}
             </HeadingDescription>
           )}
         </Heading>

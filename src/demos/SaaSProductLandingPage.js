@@ -17,6 +17,11 @@ import {
   watchStep02,
   watchStep03,
   watchStep04,
+  healthMonitorStep01,
+  healthMonitorStep02,
+  healthMonitorStep03,
+  healthMonitorStep04,
+  healthMonitorStep05,
 } from "images/steps/index";
 // import heroScreenshotImageSrc from "images/hero-screenshot-1.png";
 // import macHeroScreenshotImageSrc from "images/hero-screenshot-2.png";
@@ -59,6 +64,37 @@ export default () => {
             description: "Select the always measure heart rate",
           },
         ]}
+      />
+      <Features
+        heading="혈압 연동 방법"
+        steps={[
+          {
+            imageSrc: healthMonitorStep01,
+            title: "healthMonitorStep01",
+            description: "Open SAMSUNG Health Monitor",
+          },
+          {
+            imageSrc: healthMonitorStep02,
+            title: "healthMonitorStep02",
+            description: "Click Menu - Setting",
+          },
+          {
+            imageSrc: healthMonitorStep03,
+            title: "healthMonitorStep03",
+            description: "Click to DATA PERMISSION",
+          },
+          {
+            imageSrc: healthMonitorStep04,
+            title: "healthMonitorStep04",
+            description: "Click to SAMSUNG HEALTH",
+          },
+          {
+            imageSrc: healthMonitorStep05,
+            title: "healthMonitorStep05",
+            description: "Select All Permission",
+          },
+        ]}
+        description="갤럭시 워치로 혈압 연동을 위하여 워치 혈압 보정 후 Samsung Helth 권한 설정이 필요합니다."
       />
       {/* <MainFeature
         subheading={<Subheading>Quality Work</Subheading>}

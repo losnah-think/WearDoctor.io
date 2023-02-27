@@ -39,7 +39,7 @@ const HeadingBold = styled.p`
   ${tw`text-2xl md:text-3xl lg:text-4xl font-bold text-secondary-900`}
 `;
 const HeadingDescription = styled.p`
-  ${tw`text-lg md:text-2xl lg:text-3xl font-light flex-wrap text-secondary-400`}
+  ${tw`text-lg md:text-2xl lg:text-3xl font-light flex-wrap break-all text-secondary-400`}
 `;
 
 const VerticalSpacer = tw.div`mt-10 w-full`;
@@ -112,9 +112,13 @@ export default ({
 
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
+  // 23.02.27 버튼 링크 완성
+  // 작업자 : 최한솔
   const handleMove = (title) => {
     if (title === "previousStep01") {
-      window.location.href = isMobile ? "" : "";
+      window.location.href = isMobile 
+        ? "market://details?id=kr.btsoft.weardoctor" 
+        : "https://play.google.com/store/apps/details?id=kr.btsoft.weardoctor";
     } else if (title === "previousStep02") {
       window.location.href = isMobile
         ? "market://details?id=com.google.android.apps.healthdata"

@@ -94,7 +94,7 @@ export default () => {
             description: "Select All Permission",
           },
         ]}
-        description="갤럭시 워치로 혈압 연동을 위하여 워치 혈압 보정 후 Samsung Helth 권한 설정이 필요합니다."
+        description={"갤럭시 워치로 혈압 연동을 위하여 워치 혈압 보정 후 \n Samsung Helth 권한 설정이 필요합니다."}
       />
       {/* <MainFeature
         subheading={<Subheading>Quality Work</Subheading>}

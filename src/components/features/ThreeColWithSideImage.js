@@ -39,7 +39,7 @@ const HeadingBold = styled.p`
   ${tw`text-2xl md:text-3xl lg:text-4xl font-bold text-secondary-900`}
 `;
 const HeadingDescription = styled.p`
-  ${tw`text-lg md:text-2xl lg:text-3xl font-light flex-wrap break-all text-secondary-400`}
+  ${tw`text-lg md:text-2xl lg:text-3xl font-light flex-wrap text-center whitespace-pre-line text-secondary-400`}
 `;
 
 const VerticalSpacer = tw.div`mt-10 w-full`;

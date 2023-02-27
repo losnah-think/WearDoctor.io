@@ -23,6 +23,8 @@ const Container = tw.div`relative`;
 const ThreeColumnContainer = styled.div`
   ${tw`flex flex-col items-center md:items-stretch sm:flex-row flex-wrap justify-center max-w-screen-lg mx-auto py-20 md:py-24`}
 `;
+
+// 23.02.27 Heading CSS 내 check 이미지 제거
 const Heading = styled.div`
   ${tw`flex flex-col items-center justify-center mx-16`}
     p {
@@ -31,15 +33,24 @@ const Heading = styled.div`
     hr {
       ${tw`sm:border md:border-2 lg:border-3 border-primary-500`}
     }
-    img {
-      ${tw`hidden sm:block absolute top-[0.5rem] left-[17.2rem] md:top-[0.5rem] md:left-[22.8rem] lg:top-[0.5rem] lg:left-[28.5rem] w-8 md:w-12 lg:w-16`}
-    }
   }`;
+// const Heading = styled.div`
+//   ${tw`flex flex-col items-center justify-center mx-16`}
+//     p {
+//       ${tw`relative mb-5 md:mb-8 lg:mb-10`}
+//     }
+//     hr {
+//       ${tw`sm:border md:border-2 lg:border-3 border-primary-500`}
+//     }
+//     img {
+//       ${tw`hidden sm:block absolute top-[0.5rem] left-[17.2rem] md:top-[0.5rem] md:left-[22.8rem] lg:top-[0.5rem] lg:left-[28.5rem] w-8 md:w-12 lg:w-16`}
+//     }
+//   }`;
 const HeadingBold = styled.p`
   ${tw`text-2xl md:text-3xl lg:text-4xl font-bold text-secondary-900`}
 `;
 const HeadingDescription = styled.p`
-  ${tw`text-lg md:text-2xl lg:text-3xl font-light flex-wrap text-center whitespace-pre-line text-secondary-400`}
+  ${tw`text-lg md:text-2xl lg:text-3xl font-light text-center whitespace-pre-line text-secondary-400`}
 `;
 
 const VerticalSpacer = tw.div`mt-10 w-full`;
@@ -136,7 +147,7 @@ export default ({
               {description}
               {useUnderLine && (
                 <>
-                  <img src={require(`../../images/check-icon.png`)} alt={""} />
+                  {/* <img src={require(`../../images/check-icon.png`)} alt={""} /> */}
                   <hr />
                 </>
               )}
